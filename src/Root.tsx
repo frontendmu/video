@@ -1,15 +1,13 @@
 import {Composition} from 'remotion';
-import {SlideSequence} from './SlideSequence';
-import {MyComposition, myCompSchema} from './Composition';
-import {MySpeaker } from './Speaker';
+import {MeetupIntro} from './MeetupIntro';
 import './style.css';
 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
 			<Composition
-				id="SlideSequence"
-				component={SlideSequence}
+				id="MeetupIntro"
+				component={MeetupIntro}
 				durationInFrames={480} // Adjust based on total number of slides
 				fps={30}
 				width={720}
