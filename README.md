@@ -27,3 +27,6 @@ pnpm run start
 ## Step 4 - Render the video
 
 Click render in remotion
+
+
+<img width="1612" alt="image" src="https://github.com/user-attachments/assets/d674e835-0475-4fd3-88fb-f82243e9f254">
