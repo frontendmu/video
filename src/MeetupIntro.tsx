@@ -6,27 +6,26 @@ import meetupDetails from '../meetup_details_2024-06-22.json';
 
 export const MeetupIntro: React.FC = () => {
   const {fps } = useVideoConfig();
-  const slideDuration = 8 * fps; // x seconds per slide
-
-  console.log('meetupDetails:', meetupDetails); // Add this line for debugging
+  const slideDuration = 6 * fps; // x seconds per slide
 
   return (
     <>
-      <Audio src={staticFile("audio.mp3")} />
+      <Audio startFrom={90} src={staticFile("audio.mp3")} />
       
-      <Sequence durationInFrames={slideDuration}>
+      <Sequence  durationInFrames={slideDuration}>
         <MyComposition
           titleText="frontend.mu"
           titleColor="#000000"
           logoColor="#ff0000"
         />
       </Sequence>
-      {Array.isArray(meetupDetails) ? meetupDetails.map((session, index) => (
+      {meetupDetails.map((session, index) => (
         <Sequence
-          key={index}
+          key={session.sessionTitle}
           from={(index + 1) * slideDuration}
           durationInFrames={slideDuration}
         >
+          {/* <div className='text-white'>{alert(session.sessionTitle)}</div> */}
           <MySpeaker
             titleText={session.sessionTitle}
             titleColor="#000000"
@@ -35,7 +34,7 @@ export const MeetupIntro: React.FC = () => {
             speakerName={session.speakerName}
           />
         </Sequence>
-      )) : <p>No meetup details available</p>}
+      ))}
     </>
   );
 };

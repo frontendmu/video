@@ -8,7 +8,7 @@ export const RemotionRoot: React.FC = () => {
 			<Composition
 				id="MeetupIntro"
 				component={MeetupIntro}
-				durationInFrames={480} // Adjust based on total number of slides
+				durationInFrames={240*6} // Adjust based on total number of slides
 				fps={30}
 				width={720}
 				height={1280}
