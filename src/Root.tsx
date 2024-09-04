@@ -13,34 +13,6 @@ export const RemotionRoot: React.FC = () => {
 				width={720}
 				height={1280}
 			/>
-			{/* <Composition
-				id="Intro"
-				component={MyComposition}
-				durationInFrames={240}
-				fps={30}
-				width={720}
-				height={1280}
-				schema={myCompSchema}
-				defaultProps={{
-					titleText: 'frontend.mu',
-					titleColor: '#000000',
-					logoColor: '#ff0000',
-				}}
-			/>
-			<Composition
-				id="Speaker1"
-				component={MySpeaker}
-				durationInFrames={240}
-				fps={30}
-				width={720}
-				height={1280}
-				schema={myCompSchema}
-				defaultProps={{
-					titleText: 'Another slide',
-					titleColor: '#000000',
-					logoColor: '#00bfff',
-				}}
-			/> */}
 		</>
 	);
 };
