@@ -13,7 +13,7 @@ export const Title: React.FC<{
 	return (
 		<div
 			style={{opacity}}
-			className="text-5xl text-white font-bold leading-relaxed px-8 text-center"
+			className="text-7xl text-white font-bold leading-relaxed px-8 text-center uppercase"
 		>
 			{' '}
 			{titleText}
