@@ -2,7 +2,7 @@ import React from 'react';
 import {Sequence, useVideoConfig, Audio, staticFile} from 'remotion';
 import {MyComposition} from './Composition';
 import {MySpeaker} from './Speaker';
-import meetupDetails from '../meetup_details_2024-06-22.json';
+import meetupDetails from '../latest_meetup_details.json';
 
 export const MeetupIntro: React.FC = () => {
   const {fps } = useVideoConfig();
