@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Title: React.FC<{
+export const SubtitleOutline: React.FC<{
 	titleText: string;
 	titleColor?: string;
 	titleSize?: string;
@@ -9,20 +9,21 @@ export const Title: React.FC<{
 	titleWidth?: string;
 }> = ({
 	titleText,
-	titleColor = '#ffffff',
-	titleSize = 'text-8xl',
+	titleColor = 'rgb(75 85 99)',
+	titleSize = 'text-5xl',
 	titleOpacity = 1,
 	titleTransform = 'none',
 	titleWidth = 'w-10/12',
 }) => {
 	return (
 		<div
+			className={`${titleSize} font-semibold uppercase text-center overflow-hidden ${titleWidth} flex justify-center mt-12`}
 			style={{
 				opacity: titleOpacity,
-				color: titleColor,
+				color: '000000',
+				WebkitTextStroke: `4px ${titleColor}`,
 				transform: titleTransform,
 			}}
-			className={`${titleSize} font-bold text-center uppercase overflow-hidden ${titleWidth} flex justify-center`}
 		>
 			{titleText}
 		</div>

@@ -62,6 +62,7 @@ export const Sponsor: React.FC<z.infer<typeof myCompSchema>> = ({
 					titleColor={propTwo}
 					titleSize="text-6xl"
 					titleOpacity={opacity}
+					titleWidth="w-12/12"
 				/>
 				<SponsorLogo />
 			</div>

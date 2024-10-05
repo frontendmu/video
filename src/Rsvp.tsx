@@ -5,6 +5,7 @@ import {
 	interpolate,
 } from 'remotion';
 import {Title} from './Title';
+import {SubtitleOutline} from './SubtitleOutline';
 import {z} from 'zod';
 import {zColor} from '@remotion/zod-types';
 import {Background} from './Background';
@@ -41,16 +42,14 @@ export const Rsvp: React.FC<z.infer<typeof myCompSchema>> = ({
 					titleOpacity={textOpacity}
 					titleSize="text-6xl"
 				/>
-				<div
-					className="text-5xl font-semibold uppercase overflow-hidden w-full flex justify-center mt-12"
-					style={{
-						color: '000000',
-						WebkitTextStroke: `4px ${titleColor}`,
-						opacity: textOpacity,
-					}}
-				>
-					{meetupUrl}
-				</div>
+
+				<SubtitleOutline
+					titleText={meetupUrl}
+					titleOpacity={textOpacity}
+					titleSize="text-5xl"
+					titleColor={titleColor}
+					titleWidth="w-12/12"
+				/>
 			</div>
 		</AbsoluteFill>
 	);

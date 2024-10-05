@@ -78,7 +78,7 @@ export const Speaker: React.FC<z.infer<typeof myCompSchema>> = ({
 				<Subtitle
 					titleText="Job title"
 					titleColor={titleColor}
-					titleSize="text-4xl"
+					titleSize="text-5xl"
 				/>
 			</div>
 		</AbsoluteFill>

@@ -5,6 +5,7 @@ import {zColor} from '@remotion/zod-types';
 import {Background} from './Background';
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {Title} from './Title';
+import {SubtitleOutline} from './SubtitleOutline';
 
 export const myCompSchema = z.object({
 	meetupDate: z.string(),
@@ -70,16 +71,11 @@ export const Cover: React.FC<z.infer<typeof myCompSchema>> = ({
 					titleTransform={`translateY(${wave1}px)`}
 				/>
 
-				<div
-					className="text-6xl font-semibold uppercase overflow-hidden w-full flex justify-center mt-12"
-					style={{
-						color: '000000',
-						WebkitTextStroke: `4px ${propTwo}`,
-						transform: `translateY(${wave1}px)`,
-					}}
-				>
-					{titleSubText}
-				</div>
+				<SubtitleOutline
+					titleText={titleSubText}
+					titleColor={propTwo}
+					titleTransform={`translateY(${wave1}px)`}
+				/>
 			</div>
 		</AbsoluteFill>
 	);
