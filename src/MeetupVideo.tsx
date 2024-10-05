@@ -1,6 +1,7 @@
 import React from 'react';
 import {Sequence, useVideoConfig, Audio, staticFile} from 'remotion';
 import {Cover} from './Cover';
+import {Rsvp} from './Rsvp';
 import {Speaker} from './Speaker';
 import meetupDetails from '../latest_meetup_details.json';
 import {Sponsor} from './Sponsor';
@@ -41,6 +42,16 @@ export const MeetupVideo: React.FC = () => {
 					/>
 				</Sequence>
 			))}
+			<Sequence
+				durationInFrames={slideDuration}
+				from={slideDuration * meetupDetails.length + slideDuration * 2}
+			>
+				<Rsvp
+					titleColor={titleColor}
+					titleText="Rsvp now on frontend.mu"
+					meetupUrl="frontend.mu/meetup/58"
+				/>
+			</Sequence>
 		</>
 	);
 };
