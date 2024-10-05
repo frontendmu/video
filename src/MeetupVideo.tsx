@@ -8,7 +8,9 @@ import {Sponsor} from './Sponsor';
 export const MeetupVideo: React.FC = () => {
 	const {fps} = useVideoConfig();
 	const slideDuration = 6 * fps; // x seconds per slide
-	console.log(slideDuration);
+
+	const titleColor = '#ffffff';
+	const logoColor = '#ffffff';
 
 	return (
 		<>
@@ -17,12 +19,12 @@ export const MeetupVideo: React.FC = () => {
 			<Sequence durationInFrames={slideDuration}>
 				<Cover
 					meetupDate="2024-10-26"
-					titleColor="#ffffff"
-					logoColor="#ffffff"
+					titleColor={titleColor}
+					logoColor={logoColor}
 				/>
 			</Sequence>
 			<Sequence durationInFrames={slideDuration} from={slideDuration}>
-				<Sponsor titleText="Sponsored By" />
+				<Sponsor titleText="Sponsored By" titleColor={titleColor} />
 			</Sequence>
 			{meetupDetails.map((session, index) => (
 				<Sequence
@@ -32,9 +34,8 @@ export const MeetupVideo: React.FC = () => {
 				>
 					{/* <div className='text-white'>{alert(session.sessionTitle)}</div> */}
 					<Speaker
-						titleText={session.sessionTitle}
-						titleColor="#000000"
-						logoColor="#00bfff"
+						sessionText={session.sessionTitle}
+						titleColor={titleColor}
 						githubUsername={session.speakerGitHub}
 						speakerName={session.speakerName}
 					/>
