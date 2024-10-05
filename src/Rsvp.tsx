@@ -5,6 +5,7 @@ import {
 	interpolate,
 } from 'remotion';
 import {Title} from './Title';
+import {LogoMinimal} from './LogoMinimal';
 import {SubtitleOutline} from './SubtitleOutline';
 import {z} from 'zod';
 import {zColor} from '@remotion/zod-types';
@@ -36,6 +37,7 @@ export const Rsvp: React.FC<z.infer<typeof myCompSchema>> = ({
 		<AbsoluteFill className="bg-gray-100 items-center justify-center relative">
 			<Background />
 			<div className="flex flex-col gap-8 items-center relative z-100">
+				<LogoMinimal color={titleColor} />
 				<Title
 					titleText={titleText}
 					titleColor={titleColor}
