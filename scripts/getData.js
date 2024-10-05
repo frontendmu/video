@@ -37,11 +37,17 @@ https
 					sessionTitle: session.Session_id.title,
 				}));
 
+				const payload = {
+					meetupDate,
+					sessionDetails,
+					meetupId: specifiedMeetup.sponsors[0].Events_id,
+				};
+
 				// Write the details to a JSON file
 				const outputFileName = `latest_meetup_details.json`;
 				fs.writeFile(
 					outputFileName,
-					JSON.stringify(sessionDetails, null, 2),
+					JSON.stringify(payload, null, 2),
 					(err) => {
 						if (err) throw err;
 						console.log(

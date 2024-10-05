@@ -1,12 +1,16 @@
-[
-  {
-    "speakerName": "Sandeep Ramgolam",
-    "speakerGitHub": "MrSunshyne",
-    "sessionTitle": "Open Discussions"
-  },
-  {
-    "speakerName": "Cedric Poilly",
-    "speakerGitHub": "cedpoilly",
-    "sessionTitle": "Open Discussions"
-  }
-]
+{
+  "meetupDate": "2024-09-28",
+  "sessionDetails": [
+    {
+      "speakerName": "Sandeep Ramgolam",
+      "speakerGitHub": "MrSunshyne",
+      "sessionTitle": "Open Discussions"
+    },
+    {
+      "speakerName": "Cedric Poilly",
+      "speakerGitHub": "cedpoilly",
+      "sessionTitle": "Open Discussions"
+    }
+  ],
+  "meetupId": 58
+}

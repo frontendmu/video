@@ -19,7 +19,7 @@ export const MeetupVideo: React.FC = () => {
 
 			<Sequence durationInFrames={slideDuration}>
 				<Cover
-					meetupDate="2024-10-26"
+					meetupDate={meetupDetails.meetupDate}
 					titleColor={titleColor}
 					logoColor={logoColor}
 				/>
@@ -27,7 +27,7 @@ export const MeetupVideo: React.FC = () => {
 			<Sequence durationInFrames={slideDuration} from={slideDuration}>
 				<Sponsor titleText="Sponsored By" titleColor={titleColor} />
 			</Sequence>
-			{meetupDetails.map((session, index) => (
+			{meetupDetails.sessionDetails.map((session, index) => (
 				<Sequence
 					key={session.sessionTitle}
 					from={slideDuration + (index + 1) * slideDuration}
@@ -44,12 +44,15 @@ export const MeetupVideo: React.FC = () => {
 			))}
 			<Sequence
 				durationInFrames={slideDuration}
-				from={slideDuration * meetupDetails.length + slideDuration * 2}
+				from={
+					slideDuration * meetupDetails.sessionDetails.length +
+					slideDuration * 2
+				}
 			>
 				<Rsvp
 					titleColor={titleColor}
 					titleText="Rsvp now on frontend.mu"
-					meetupUrl="frontend.mu/meetup/58"
+					meetupUrl={`frontend.mu/meetup/${meetupDetails.meetupId}`}
 				/>
 			</Sequence>
 		</>
