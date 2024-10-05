@@ -1,32 +1,15 @@
 import React from 'react';
-import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 
 export const LogoFull: React.FC<{
 	color: string;
+	wave?: number;
 	width?: number;
 	height?: number;
-}> = ({color, width = 600, height = 200}) => {
-	const frame = useCurrentFrame();
-	const {height: videoHeight, fps} = useVideoConfig();
-
-	const entrance = spring({
-		fps,
-		frame,
-		config: {
-			damping: 200,
-		},
-		durationInFrames: 30,
-	});
-
-	const entranceOffset = interpolate(entrance, [0, 1], [videoHeight, 0]);
-
-	const wave1 = Math.cos(frame / 15) * 10 + entranceOffset;
-	// const wave2 = Math.cos((frame - 5) / 15) * 10 + entranceOffset;
-
+}> = ({color, wave = 0, width = 600, height = 200}) => {
 	return (
 		<div>
 			<svg
-				style={{transform: `translateY(${wave1}px)`}}
+				style={{transform: `translateY(${wave}px)`}}
 				xmlns="http://www.w3.org/2000/svg"
 				xmlns:xlink="http://www.w3.org/1999/xlink"
 				width={width}

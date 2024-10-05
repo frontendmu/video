@@ -1,21 +1,27 @@
-import {interpolate} from 'remotion';
-import {useCurrentFrame} from 'remotion';
 import React from 'react';
 
 export const Title: React.FC<{
 	titleText: string;
-}> = ({titleText}) => {
-	const frame = useCurrentFrame();
-	const opacity = interpolate(frame, [20, 40], [0, 1], {
-		extrapolateLeft: 'clamp',
-		extrapolateRight: 'clamp',
-	});
+	titleColor?: string;
+	titleSize?: string;
+	titleOpacity?: number;
+	titleTransform?: string;
+}> = ({
+	titleText,
+	titleColor = '#ffffff',
+	titleSize = 'text-8xl',
+	titleOpacity = 1,
+	titleTransform = 'none',
+}) => {
 	return (
 		<div
-			style={{opacity}}
-			className="text-7xl text-white font-bold leading-relaxed px-8 text-center uppercase"
+			style={{
+				opacity: titleOpacity,
+				color: titleColor,
+				transform: titleTransform,
+			}}
+			className={`${titleSize} font-bold text-center uppercase overflow-hidden w-8/12 flex justify-center`}
 		>
-			{' '}
 			{titleText}
 		</div>
 	);
