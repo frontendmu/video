@@ -15,7 +15,11 @@ export const MeetupVideo: React.FC = () => {
 
 	return (
 		<>
-			<Audio startFrom={90} src={staticFile('audio.mp3')} />
+			<Audio
+				startFrom={slideDuration}
+				endAt={slideDuration * (3 + (meetupDetails.sessionDetails.length + 1))}
+				src={staticFile('audio.mp3')}
+			/>
 
 			<Sequence durationInFrames={slideDuration}>
 				<Cover
