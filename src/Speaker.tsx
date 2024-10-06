@@ -9,7 +9,7 @@ import {Subtitle} from './Subtitle';
 import {Title} from './Title';
 import {z} from 'zod';
 import {zColor} from '@remotion/zod-types';
-import {Background} from './Background';
+import {Background} from './Background/Background';
 
 export const myCompSchema = z.object({
 	sessionText: z.string(),
@@ -66,7 +66,7 @@ const SpeakerJob: React.FC<{speakerJob: string; titleColor: string}> = ({
 			titleText={speakerJob}
 			titleColor={titleColor}
 			titleOpacity={opacity}
-			titleSize="text-5xl"
+			titleSize="text-4xl"
 		/>
 	);
 };

@@ -17,7 +17,7 @@ export const SubtitleOutline: React.FC<{
 }) => {
 	return (
 		<div
-			className={`${titleSize} font-semibold uppercase text-center overflow-hidden ${titleWidth} flex justify-center mt-12`}
+			className={`${titleSize} font-semibold uppercase text-center overflow-hidden ${titleWidth} flex justify-center my-12`}
 			style={{
 				opacity: titleOpacity,
 				color: '000000',

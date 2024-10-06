@@ -9,7 +9,7 @@ import {LogoMinimal} from './LogoMinimal';
 import {SubtitleOutline} from './SubtitleOutline';
 import {z} from 'zod';
 import {zColor} from '@remotion/zod-types';
-import {Background} from './Background';
+import {Background} from './Background/Background';
 
 export const myCompSchema = z.object({
 	titleText: z.string(),

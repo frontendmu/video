@@ -8,7 +8,7 @@ import {
 } from 'remotion';
 import {Title} from './Title';
 import {z} from 'zod';
-import {Background} from './Background';
+import {Background} from './Background/Background';
 import {zColor} from '@remotion/zod-types';
 
 export const myCompSchema = z.object({

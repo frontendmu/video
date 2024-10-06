@@ -2,7 +2,7 @@ import {AbsoluteFill} from 'remotion';
 import {LogoFull} from './LogoFull';
 import {z} from 'zod';
 import {zColor} from '@remotion/zod-types';
-import {Background} from './Background';
+import {Background} from './Background/Background';
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {Title} from './Title';
 import {SubtitleOutline} from './SubtitleOutline';
