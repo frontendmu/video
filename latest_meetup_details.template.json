@@ -4,12 +4,14 @@
     {
       "speakerName": "Sandeep Ramgolam",
       "speakerGitHub": "MrSunshyne",
-      "sessionTitle": "Open Discussions"
+      "sessionTitle": "Open Discussions",
+      "speakerJob": "Senior Frontend Engineer"
     },
     {
       "speakerName": "Cedric Poilly",
       "speakerGitHub": "cedpoilly",
-      "sessionTitle": "Open Discussions"
+      "sessionTitle": "Open Discussions",
+      "speakerJob": "Senior Frontend Engineer"
     }
   ],
   "meetupId": 58

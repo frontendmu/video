@@ -22,17 +22,31 @@ pnpm install
 
     `latest_meetup_details.template.json` is a template file that contains the structure of the data that will be extracted from the meetup page.
 
-3. Add a `sponsor.png` file for the sponsor logo to `public`.
+3. **Optional** - Add `speakerJob` to `latest_meetup_details.json` to display the speaker's job title.
 
-4. Change `audio.mp3` in `public` to your desired audio file, keeping the file name the same.
+    ```json
 
-5. Start remotion
+    {
+      "speakerName": "Sandeep Ramgolam",
+      "speakerGitHub": "MrSunshyne",
+      "sessionTitle": "Open Discussions",
+      "speakerJob": "Senior Frontend Engineer"
+    },
+    ```
+
+    If `speakerJob` is not provided, it will **not** be displayed in  the video.
+
+4. **Important** - Add a `sponsor.png` to `public` for the sponsor logo.
+
+5. **Optional** - Change `audio.mp3` in `public` to your desired audio file, keeping the file name the same.
+
+6. Start remotion
 
     ```bash
     pnpm run start
     ```
 
-6. Render the video
+7. Render the video
 
     Click **Render** in `remotion studio`
 

@@ -39,6 +39,7 @@ export const MeetupVideo: React.FC = () => {
 						titleColor={titleColor}
 						githubUsername={session.speakerGitHub}
 						speakerName={session.speakerName}
+						speakerJob={session.speakerJob}
 					/>
 				</Sequence>
 			))}

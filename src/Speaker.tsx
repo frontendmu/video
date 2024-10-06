@@ -16,6 +16,7 @@ export const myCompSchema = z.object({
 	titleColor: zColor(),
 	githubUsername: z.string(),
 	speakerName: z.string(),
+	speakerJob: z.string(),
 });
 
 const ProfilePicture: React.FC<{githubUsername: string}> = ({
@@ -42,11 +43,40 @@ const ProfilePicture: React.FC<{githubUsername: string}> = ({
 	);
 };
 
+const SpeakerJob: React.FC<{speakerJob: string; titleColor: string}> = ({
+	speakerJob,
+	titleColor,
+}) => {
+	const frame = useCurrentFrame();
+	const {durationInFrames} = useVideoConfig();
+	const opacity = interpolate(
+		frame,
+		[0, 20, durationInFrames - 20, durationInFrames],
+		[0, 1, 1, 0],
+		{
+			extrapolateLeft: 'clamp',
+			extrapolateRight: 'clamp',
+		},
+	);
+	if (!speakerJob) {
+		return null;
+	}
+	return (
+		<Subtitle
+			titleText={speakerJob}
+			titleColor={titleColor}
+			titleOpacity={opacity}
+			titleSize="text-5xl"
+		/>
+	);
+};
+
 export const Speaker: React.FC<z.infer<typeof myCompSchema>> = ({
 	sessionText,
 	titleColor,
 	githubUsername,
 	speakerName,
+	speakerJob,
 }) => {
 	const frame = useCurrentFrame();
 	const {durationInFrames} = useVideoConfig();
@@ -74,12 +104,9 @@ export const Speaker: React.FC<z.infer<typeof myCompSchema>> = ({
 					titleText={speakerName}
 					titleColor={titleColor}
 					titleSize="text-5xl"
+					titleOpacity={opacity}
 				/>
-				<Subtitle
-					titleText="Job title"
-					titleColor={titleColor}
-					titleSize="text-5xl"
-				/>
+				<SpeakerJob speakerJob={speakerJob} titleColor={titleColor} />
 			</div>
 		</AbsoluteFill>
 	);
