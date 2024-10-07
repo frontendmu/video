@@ -9,28 +9,26 @@ import {Title} from './Title';
 import {z} from 'zod';
 import {Background} from './Background/Background';
 import {zColor} from '@remotion/zod-types';
-
+import {Subtitle} from './Subtitle';
 
 export const SponsorDetail = z.object({
 	logo: z.string(),
 	name: z.string(),
-	darkbg: z.boolean()
-})
+	darkbg: z.boolean(),
+	venue: z.string(),
+});
 
 export const myCompSchema = z.object({
 	titleText: z.string(),
 	titleColor: zColor(),
-	sponsorDetail: SponsorDetail
+	sponsorDetail: SponsorDetail,
 });
 
 export const LogoParams = z.object({
-	sponsorDetail: SponsorDetail
+	sponsorDetail: SponsorDetail,
 });
 
-
-const SponsorLogo: React.FC<z.infer<typeof LogoParams>> = ({
-	sponsorDetail
-}) => {
+const SponsorLogo: React.FC<z.infer<typeof LogoParams>> = ({sponsorDetail}) => {
 	const frame = useCurrentFrame();
 	const {durationInFrames} = useVideoConfig();
 	const opacity = interpolate(
@@ -46,7 +44,7 @@ const SponsorLogo: React.FC<z.infer<typeof LogoParams>> = ({
 		<Img
 			src={sponsorDetail.logo}
 			alt="Sponsor logo"
-			className={`${sponsorDetail.darkbg ? 'bg-black' : 'bg-white'} w-full rounded-2xl object-contain`}
+			className={`${sponsorDetail.darkbg ? 'bg-black' : 'bg-white'} w-full rounded-2xl object-contain p-4`}
 			style={{opacity}}
 		/>
 	);
@@ -80,6 +78,13 @@ export const Sponsor: React.FC<z.infer<typeof myCompSchema>> = ({
 					titleWidth="w-12/12"
 				/>
 				<SponsorLogo sponsorDetail={sponsorDetail} />
+				<Subtitle
+					titleText={sponsorDetail.venue}
+					titleColor={titleColor}
+					titleOpacity={opacity}
+					titleSize="text-5xl"
+					titleWidth="w-full"
+				/>
 			</div>
 		</AbsoluteFill>
 	);

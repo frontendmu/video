@@ -6,7 +6,7 @@ import {
 } from 'remotion';
 import {Title} from './Title';
 import {LogoMinimal} from './LogoMinimal';
-import {SubtitleOutline} from './SubtitleOutline';
+import {Subtitle} from './Subtitle';
 import {z} from 'zod';
 import {zColor} from '@remotion/zod-types';
 import {Background} from './Background/Background';
@@ -43,14 +43,16 @@ export const Rsvp: React.FC<z.infer<typeof myCompSchema>> = ({
 					titleColor={titleColor}
 					titleOpacity={textOpacity}
 					titleSize="text-6xl"
+					titleOtherClasses="uppercase my-12"
 				/>
 
-				<SubtitleOutline
+				<Subtitle
 					titleText={meetupUrl}
 					titleOpacity={textOpacity}
 					titleSize="text-5xl"
 					titleColor={titleColor}
-					titleWidth="w-12/12"
+					titleWidth="w-full"
+					titleUnderline="underline"
 				/>
 			</div>
 		</AbsoluteFill>

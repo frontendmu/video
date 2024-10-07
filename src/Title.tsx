@@ -7,6 +7,7 @@ export const Title: React.FC<{
 	titleOpacity?: number;
 	titleTransform?: string;
 	titleWidth?: string;
+	titleOtherClasses?: string;
 }> = ({
 	titleText,
 	titleColor = '#ffffff',
@@ -14,6 +15,7 @@ export const Title: React.FC<{
 	titleOpacity = 1,
 	titleTransform = 'none',
 	titleWidth = 'w-10/12',
+	titleOtherClasses = '',
 }) => {
 	return (
 		<div
@@ -22,7 +24,7 @@ export const Title: React.FC<{
 				color: titleColor,
 				transform: titleTransform,
 			}}
-			className={`${titleSize} leading-relaxed tracking-wide font-bold text-center overflow-hidden ${titleWidth} flex justify-center`}
+			className={`font-bold text-center flex justify-center ${titleWidth} ${titleSize}  ${titleOtherClasses}`}
 		>
 			{titleText}
 		</div>

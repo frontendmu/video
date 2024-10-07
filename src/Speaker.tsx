@@ -98,6 +98,7 @@ export const Speaker: React.FC<z.infer<typeof myCompSchema>> = ({
 					titleColor={titleColor}
 					titleOpacity={opacity}
 					titleSize="text-6xl"
+					titleOtherClasses="leading-snug tracking-wide "
 				/>
 				<ProfilePicture githubUsername={githubUsername} />
 				<Title

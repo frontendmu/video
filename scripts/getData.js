@@ -39,21 +39,22 @@ https
 					sessionTitle: session.Session_id.title,
 				}));
 
-				const sponsorsDetails = specifiedMeetup.sponsors.map(sponsor => {
-					const logo = sponsor.Sponsor_id.Logo.filename_disk
-					const pathToLogo = ASSET_PATH + logo
+				const sponsorsDetails = specifiedMeetup.sponsors.map((sponsor) => {
+					const logo = sponsor.Sponsor_id.Logo.filename_disk;
+					const pathToLogo = ASSET_PATH + logo;
 					return {
 						logo: pathToLogo,
 						name: sponsor.Sponsor_id.Name,
-						darkbg: sponsor.Sponsor_id.darkbg
-					}
-				})
+						darkbg: sponsor.Sponsor_id.darkbg,
+						venue: specifiedMeetup.Venue,
+					};
+				});
 
 				const payload = {
 					meetupDate,
 					sessionDetails,
 					sponsorsDetails,
-					meetupId: specifiedMeetup.sponsors[0]?.Events_id,
+					meetupId: specifiedMeetup.id,
 				};
 
 				// Write the details to a JSON file

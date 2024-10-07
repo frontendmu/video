@@ -11,6 +11,7 @@ export const MeetupVideo: React.FC = () => {
 	const slideDuration = 6 * fps; // x seconds per slide
 
 	const titleColor = '#ffffff';
+	const secondaryTitleColor = 'hsl(331, 90%, 56%)';
 	const logoColor = '#ffffff';
 
 	return (
@@ -25,12 +26,17 @@ export const MeetupVideo: React.FC = () => {
 				<Cover
 					meetupDate={meetupDetails.meetupDate}
 					titleColor={titleColor}
+					secondaryTitleColor={secondaryTitleColor}
 					logoColor={logoColor}
 				/>
 			</Sequence>
 			{meetupDetails.sponsorsDetails.map((sponsor) => (
 				<Sequence durationInFrames={slideDuration} from={slideDuration}>
-					<Sponsor titleText="Sponsored By" titleColor={titleColor} sponsorDetail={sponsor} />
+					<Sponsor
+						titleText="Sponsored By"
+						titleColor={titleColor}
+						sponsorDetail={sponsor}
+					/>
 				</Sequence>
 			))}
 			{meetupDetails.sessionDetails.map((session, index) => (

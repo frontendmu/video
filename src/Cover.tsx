@@ -5,18 +5,20 @@ import {zColor} from '@remotion/zod-types';
 import {Background} from './Background/Background';
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {Title} from './Title';
-import {SubtitleOutline} from './SubtitleOutline';
+import {Subtitle} from './Subtitle';
 
 export const myCompSchema = z.object({
 	meetupDate: z.string(),
 	titleColor: zColor(),
+	secondaryTitleColor: zColor(),
 	logoColor: zColor(),
 });
 
 export const Cover: React.FC<z.infer<typeof myCompSchema>> = ({
 	meetupDate,
-	titleColor: propTwo,
-	logoColor: propThree,
+	titleColor,
+	secondaryTitleColor,
+	logoColor,
 }) => {
 	const frame = useCurrentFrame();
 	const {height: videoHeight, fps, durationInFrames} = useVideoConfig();
@@ -63,18 +65,20 @@ export const Cover: React.FC<z.infer<typeof myCompSchema>> = ({
 				className="flex flex-col gap-4 items-center relative z-100"
 				style={{opacity: mainContainerOpacity}}
 			>
-				<LogoFull color={propThree} wave={wave1} />
+				<LogoFull color={logoColor} wave={wave1} />
 
 				<Title
 					titleText={`${titleMainText} Meetup`}
-					titleColor={propTwo}
+					titleColor={titleColor}
 					titleTransform={`translateY(${wave1}px)`}
+					titleOtherClasses="leading-tight mb-12"
 				/>
 
-				<SubtitleOutline
+				<Subtitle
 					titleText={titleSubText}
-					titleColor={propTwo}
+					titleColor={secondaryTitleColor}
 					titleTransform={`translateY(${wave1}px)`}
+					titleUnderline="underline"
 				/>
 			</div>
 		</AbsoluteFill>
