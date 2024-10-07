@@ -28,9 +28,11 @@ export const MeetupVideo: React.FC = () => {
 					logoColor={logoColor}
 				/>
 			</Sequence>
-			<Sequence durationInFrames={slideDuration} from={slideDuration}>
-				<Sponsor titleText="Sponsored By" titleColor={titleColor} />
-			</Sequence>
+			{meetupDetails.sponsorsDetails.map((sponsor) => (
+				<Sequence durationInFrames={slideDuration} from={slideDuration}>
+					<Sponsor titleText="Sponsored By" titleColor={titleColor} sponsorDetail={sponsor} />
+				</Sequence>
+			))}
 			{meetupDetails.sessionDetails.map((session, index) => (
 				<Sequence
 					key={session.sessionTitle}

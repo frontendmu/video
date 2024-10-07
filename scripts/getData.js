@@ -5,8 +5,9 @@ const fs = require('fs');
 const url =
 	'https://raw.githubusercontent.com/Front-End-Coders-Mauritius/frontend.mu/main/packages/frontendmu-data/data/meetups-raw.json';
 
+const ASSET_PATH = 'https://directus.frontend.mu/assets/';
 // The date of the meetup you want to fetch (format: 'YYYY-MM-DD')
-const meetupDate = '2024-09-28'; // Change this date to the desired meetup date
+const meetupDate = '2024-10-26'; // Change this date to the desired meetup date
 
 // Fetch the data from the URL
 https
@@ -27,7 +28,7 @@ https
 			const specifiedMeetup = meetups.find(
 				(meetup) => meetup.Date === meetupDate,
 			);
-			console.log(specifiedMeetup);
+			// console.log(specifiedMeetup);
 
 			if (specifiedMeetup) {
 				// Extract the relevant details
@@ -38,10 +39,21 @@ https
 					sessionTitle: session.Session_id.title,
 				}));
 
+				const sponsorsDetails = specifiedMeetup.sponsors.map(sponsor => {
+					const logo = sponsor.Sponsor_id.Logo.filename_disk
+					const pathToLogo = ASSET_PATH + logo
+					return {
+						logo: pathToLogo,
+						name: sponsor.Sponsor_id.Name,
+						darkbg: sponsor.Sponsor_id.darkbg
+					}
+				})
+
 				const payload = {
 					meetupDate,
 					sessionDetails,
-					meetupId: specifiedMeetup.sponsors[0].Events_id,
+					sponsorsDetails,
+					meetupId: specifiedMeetup.sponsors[0]?.Events_id,
 				};
 
 				// Write the details to a JSON file

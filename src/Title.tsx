@@ -22,7 +22,7 @@ export const Title: React.FC<{
 				color: titleColor,
 				transform: titleTransform,
 			}}
-			className={`${titleSize} font-bold text-center uppercase overflow-hidden ${titleWidth} flex justify-center`}
+			className={`${titleSize} leading-relaxed tracking-wide font-bold text-center overflow-hidden ${titleWidth} flex justify-center`}
 		>
 			{titleText}
 		</div>
