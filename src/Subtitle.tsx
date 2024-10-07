@@ -1,16 +1,34 @@
 import React from 'react';
-import {interpolate, useCurrentFrame} from 'remotion';
 
-export const Subtitle: React.FC = () => {
-	const frame = useCurrentFrame();
-	const opacity = interpolate(frame, [30, 50], [0, 1], {
-		extrapolateLeft: 'clamp',
-		extrapolateRight: 'clamp',
-	});
-
+export const Subtitle: React.FC<{
+	titleText: string;
+	titleColor?: string;
+	titleSize?: string;
+	titleOpacity?: number;
+	titleTransform?: string;
+	titleUnderline?: string;
+	titleWidth?: string;
+	titleOtherClasses?: string;
+}> = ({
+	titleText,
+	titleColor = 'rgb(75 85 99)',
+	titleSize = 'text-5xl',
+	titleOpacity = 1,
+	titleTransform = 'none',
+	titleUnderline = 'no-underline',
+	titleWidth = 'w-10/12',
+	titleOtherClasses = '',
+}) => {
 	return (
-		<div className="text-gray-600 text-3xl text-white" style={{opacity}}>
-			September 28 2024
+		<div
+			className={`text-center flex justify-center ${titleSize} ${titleUnderline} ${titleWidth} ${titleOtherClasses}`}
+			style={{
+				opacity: titleOpacity,
+				color: titleColor,
+				transform: titleTransform,
+			}}
+		>
+			{titleText}
 		</div>
 	);
 };
