@@ -34,6 +34,7 @@ https
 				const sessionDetails = specifiedMeetup.sessions.map((session) => ({
 					speakerName: session.Session_id.speakers.name,
 					speakerGitHub: session.Session_id.speakers.github_account,
+					speakerJob: '',
 					sessionTitle: session.Session_id.title,
 				}));
 
