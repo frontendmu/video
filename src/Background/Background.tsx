@@ -1,11 +1,19 @@
 import React from 'react';
+import {interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
 
 export const Background: React.FC = () => {
+	const frame = useCurrentFrame();
+	const {durationInFrames} = useVideoConfig();
+	const transformRotate = interpolate(frame, [0, durationInFrames], [0, 360], {
+		extrapolateLeft: 'clamp',
+		extrapolateRight: 'clamp',
+	});
+
 	return (
 		<div className="relative">
 			<div className="fixed inset-0 w-full h-auto from-[#182034] to-[#0a1329] bg-gradient-to-tl"></div>
 			<div className="fixed  inset-0 w-full h-auto bg-position scale-[400%] translate-y-[-300px]">
-				<div className="bg-animation animate-spin-slow">
+				<div style={{transform: `rotate(${transformRotate}deg)`}}>
 					<svg
 						width="800"
 						height="800"
