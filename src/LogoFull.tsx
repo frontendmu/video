@@ -5,7 +5,7 @@ export const LogoFull: React.FC<{
 	wave?: number;
 	width?: number;
 	height?: number;
-}> = ({color, wave = 0, width = 600, height = 200}) => {
+}> = ({color, wave = 0, width = 600, height = 150}) => {
 	return (
 		<div>
 			<svg
