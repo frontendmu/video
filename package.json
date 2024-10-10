@@ -36,6 +36,7 @@
     "start": "remotion studio",
     "build": "remotion render MyComp out/video.mp4",
     "upgrade": "remotion upgrade",
+    "generate": "remotion bundle",
     "test": "eslint src --ext ts,tsx,js,jsx && tsc",
     "data": "node scripts/getData.js"
   },
