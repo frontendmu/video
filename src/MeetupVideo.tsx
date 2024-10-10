@@ -3,10 +3,30 @@ import {Sequence, useVideoConfig, Audio, staticFile} from 'remotion';
 import {Cover} from './Cover';
 import {Rsvp} from './Rsvp';
 import {Speaker} from './Speaker';
-import meetupDetails from '../latest_meetup_details.json';
-import {Sponsor} from './Sponsor';
+// import meetupDetails from '../latest_meetup_details.json';
+import {Sponsor, SponsorDetail} from './Sponsor';
+import { z } from 'zod';
 
-export const MeetupVideo: React.FC = () => {
+export const SessionDetails = z.object({
+	speakerName: z.string(),
+	speakerGitHub: z.string().optional().nullable(),
+	speakerJob: z.string(),
+	sessionTitle: z.string(),
+});
+
+export const SingleMeetup = z.object({
+	"meetupDate": z.string(),
+	"meetupId": z.number(),
+	"meetupTitle": z.string(),
+	"sessionDetails": z.array(SessionDetails),
+	"sponsorsDetails": z.array(SponsorDetail),
+});
+
+export const MeetupDetails = z.object({
+	meetupDetails: SingleMeetup,
+});
+
+export const MeetupVideo: React.FC<z.infer<typeof MeetupDetails>> = ({meetupDetails}) => {
 	const {fps} = useVideoConfig();
 	const slideDuration = 6 * fps; // x seconds per slide
 
@@ -28,6 +48,7 @@ export const MeetupVideo: React.FC = () => {
 					titleColor={titleColor}
 					secondaryTitleColor={secondaryTitleColor}
 					logoColor={logoColor}
+					meetupTitle={meetupDetails.meetupTitle}
 				/>
 			</Sequence>
 			{meetupDetails.sponsorsDetails.map((sponsor) => (
@@ -41,7 +62,7 @@ export const MeetupVideo: React.FC = () => {
 			))}
 			{meetupDetails.sessionDetails.map((session, index) => (
 				<Sequence
-					key={session.sessionTitle}
+					key={session.sessionTitle + index}
 					from={slideDuration + (index + 1) * slideDuration}
 					durationInFrames={slideDuration}
 				>
