@@ -38,7 +38,8 @@
     "upgrade": "remotion upgrade",
     "generate": "remotion bundle",
     "test": "eslint src --ext ts,tsx,js,jsx && tsc",
-    "data": "node scripts/getData.js"
+    "data": "node scripts/getData.js",
+    "prestart": "pnpm run data"
   },
   "packageManager": "pnpm@9.6.0"
 }

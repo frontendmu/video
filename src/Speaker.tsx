@@ -11,15 +11,21 @@ import {z} from 'zod';
 import {zColor} from '@remotion/zod-types';
 import {Background} from './Background/Background';
 
+export const GithubUsername = z.string().nullable().optional();
+
 export const myCompSchema = z.object({
 	sessionText: z.string(),
 	titleColor: zColor(),
-	githubUsername: z.string(),
+	githubUsername: GithubUsername,
 	speakerName: z.string(),
 	speakerJob: z.string(),
 });
 
-const ProfilePicture: React.FC<{githubUsername: string}> = ({
+export const PropsGithubUsername = z.object({
+	githubUsername: GithubUsername,
+});
+
+const ProfilePicture: React.FC<z.infer<typeof PropsGithubUsername>> = ({
 	githubUsername,
 }) => {
 	const frame = useCurrentFrame();
