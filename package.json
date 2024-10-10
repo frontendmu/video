@@ -37,7 +37,8 @@
     "build": "remotion render MyComp out/video.mp4",
     "upgrade": "remotion upgrade",
     "test": "eslint src --ext ts,tsx,js,jsx && tsc",
-    "data": "node scripts/getData.js"
+    "data": "node scripts/getData.js",
+    "prestart": "pnpm run data"
   },
   "packageManager": "pnpm@9.6.0"
 }

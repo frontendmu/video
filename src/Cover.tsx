@@ -12,6 +12,7 @@ export const myCompSchema = z.object({
 	titleColor: zColor(),
 	secondaryTitleColor: zColor(),
 	logoColor: zColor(),
+	meetupTitle: z.string(),
 });
 
 export const Cover: React.FC<z.infer<typeof myCompSchema>> = ({
@@ -19,6 +20,7 @@ export const Cover: React.FC<z.infer<typeof myCompSchema>> = ({
 	titleColor,
 	secondaryTitleColor,
 	logoColor,
+	meetupTitle,
 }) => {
 	const frame = useCurrentFrame();
 	const {height: videoHeight, fps, durationInFrames} = useVideoConfig();
@@ -52,9 +54,9 @@ export const Cover: React.FC<z.infer<typeof myCompSchema>> = ({
 		[0, 1, 1, 0],
 	);
 
-	const titleMainText = new Date(meetupDate).toLocaleString('en-US', {
-		month: 'long',
-	});
+	// const titleMainText = new Date(meetupDate).toLocaleString('en-US', {
+	// 	month: 'long',
+	// });
 
 	const titleSubText = new Date(meetupDate).toDateString();
 
@@ -68,7 +70,7 @@ export const Cover: React.FC<z.infer<typeof myCompSchema>> = ({
 				<LogoFull color={logoColor} wave={wave1} />
 
 				<Title
-					titleText={`${titleMainText} Meetup`}
+					titleText={meetupTitle}
 					titleColor={titleColor}
 					titleTransform={`translateY(${wave1}px)`}
 					titleOtherClasses="leading-tight mb-12"
