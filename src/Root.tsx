@@ -4,9 +4,9 @@ import './style.css';
 import allMeetups from '../all-meetups.json';
 
 
-// a function that only allows a-z, A-Z, 0-9, CJK, but no spaces
+// a function that only allows a-z, A-Z, 0-9, CJK, but replace spaces with - and remove multiple - 
 function removeSpecialChars(str:  string) {
-	return str.replace(/[^a-zA-Z0-9\u4E00-\u9FFF]/g, '');
+	return str.replace(/[^a-zA-Z0-9\u4E00-\u9FFF]/g, '-').replace(/-+/g, '-');
 }
 
 export const RemotionRoot: React.FC = () => {
@@ -15,7 +15,7 @@ export const RemotionRoot: React.FC = () => {
 			{allMeetups.map((meetup) => (
 				<Composition
 					key={meetup.meetupId}
-					id={removeSpecialChars(meetup.meetupTitle)}
+					id={removeSpecialChars(meetup.meetupDate + '-' + meetup.meetupTitle)}
 					component={MeetupVideo}
 					defaultProps={
 						{

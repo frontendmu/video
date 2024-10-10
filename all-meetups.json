@@ -73,20 +73,6 @@
   },
   {
     "meetupDate": "2016-07-30",
-    "sessionDetails": [],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/a72a156c-05ba-41ff-8cde-f9c5c99cb98b.png",
-        "name": "Extension Interactive",
-        "darkbg": false,
-        "venue": "Extension Interactive"
-      }
-    ],
-    "meetupId": 19,
-    "meetupTitle": "#1 Front-End Mauritius Meetup July 2016"
-  },
-  {
-    "meetupDate": "2016-07-30",
     "sessionDetails": [
       {
         "speakerName": "Umar Waliyullah",
