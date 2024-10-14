@@ -5,7 +5,7 @@ import {Rsvp} from './Rsvp';
 import {Speaker} from './Speaker';
 // import meetupDetails from '../latest_meetup_details.json';
 import {Sponsor, SponsorDetail} from './Sponsor';
-import { z } from 'zod';
+import {z} from 'zod';
 
 export const SessionDetails = z.object({
 	speakerName: z.string(),
@@ -15,18 +15,20 @@ export const SessionDetails = z.object({
 });
 
 export const SingleMeetup = z.object({
-	"meetupDate": z.string(),
-	"meetupId": z.number(),
-	"meetupTitle": z.string(),
-	"sessionDetails": z.array(SessionDetails),
-	"sponsorsDetails": z.array(SponsorDetail),
+	meetupDate: z.string(),
+	meetupId: z.number(),
+	meetupTitle: z.string(),
+	sessionDetails: z.array(SessionDetails),
+	sponsorsDetails: z.array(SponsorDetail),
 });
 
 export const MeetupDetails = z.object({
 	meetupDetails: SingleMeetup,
 });
 
-export const MeetupVideo: React.FC<z.infer<typeof MeetupDetails>> = ({meetupDetails}) => {
+export const MeetupVideo: React.FC<z.infer<typeof MeetupDetails>> = ({
+	meetupDetails,
+}) => {
 	const {fps} = useVideoConfig();
 	const slideDuration = 6 * fps; // x seconds per slide
 
@@ -42,7 +44,7 @@ export const MeetupVideo: React.FC<z.infer<typeof MeetupDetails>> = ({meetupDeta
 				src={staticFile('audio.mp3')}
 			/>
 
-			<Sequence durationInFrames={slideDuration}>
+			<Sequence name="Cover" durationInFrames={slideDuration}>
 				<Cover
 					meetupDate={meetupDetails.meetupDate}
 					titleColor={titleColor}
@@ -52,7 +54,12 @@ export const MeetupVideo: React.FC<z.infer<typeof MeetupDetails>> = ({meetupDeta
 				/>
 			</Sequence>
 			{meetupDetails.sponsorsDetails.map((sponsor) => (
-				<Sequence durationInFrames={slideDuration} from={slideDuration}>
+				<Sequence
+					key={sponsor.name}
+					name={`Sponsor - ${sponsor.name}`}
+					durationInFrames={slideDuration}
+					from={slideDuration}
+				>
 					<Sponsor
 						titleText="Sponsored By"
 						titleColor={titleColor}
@@ -62,7 +69,8 @@ export const MeetupVideo: React.FC<z.infer<typeof MeetupDetails>> = ({meetupDeta
 			))}
 			{meetupDetails.sessionDetails.map((session, index) => (
 				<Sequence
-					key={session.sessionTitle + index}
+					key={`${session.sessionTitle}-${session.speakerName}`}
+					name={`Session - ${session.sessionTitle}`}
 					from={slideDuration + (index + 1) * slideDuration}
 					durationInFrames={slideDuration}
 				>
@@ -77,6 +85,7 @@ export const MeetupVideo: React.FC<z.infer<typeof MeetupDetails>> = ({meetupDeta
 				</Sequence>
 			))}
 			<Sequence
+				name="RSVP"
 				durationInFrames={slideDuration}
 				from={
 					slideDuration * meetupDetails.sessionDetails.length +
