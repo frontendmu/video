@@ -11,7 +11,7 @@ export const LogoFull: React.FC<{
 			<svg
 				style={{transform: `translateY(${wave}px)`}}
 				xmlns="http://www.w3.org/2000/svg"
-				xmlns:xlink="http://www.w3.org/1999/xlink"
+				xmlnsXlink="http://www.w3.org/1999/xlink"
 				width={width}
 				zoomAndPan="magnify"
 				viewBox="0 0 600 149.999998"

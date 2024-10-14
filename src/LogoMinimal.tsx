@@ -11,7 +11,7 @@ export const LogoMinimal: React.FC<{
 			<svg
 				style={{transform: `translateY(${wave}px)`}}
 				xmlns="http://www.w3.org/2000/svg"
-				xmlns:xlink="http://www.w3.org/1999/xlink"
+				xmlnsXlink="http://www.w3.org/1999/xlink"
 				width={width}
 				zoomAndPan="magnify"
 				viewBox="0 0 810 809.999993"
@@ -47,14 +47,14 @@ export const LogoMinimal: React.FC<{
 				</defs>
 				<g clip-path="url(#4ac60d2535)">
 					<path
-						stroke-linecap="butt"
+						strokeLinecap="butt"
 						transform="matrix(0.479692, 0, 0, 0.479692, 57.114104, -3.340133)"
 						fill="none"
 						stroke-linejoin="miter"
 						d="M 1593.558228 801.361149 C 1593.558228 1239.093192 1238.569708 1593.943278 800.658513 1593.943278 C 362.747319 1593.943278 7.758799 1239.093192 7.758799 801.361149 C 7.758799 363.629107 362.747319 8.779021 800.658513 8.779021 C 1238.569708 8.779021 1593.558228 363.629107 1593.558228 801.361149 Z M 1593.558228 801.361149 "
 						stroke="#1c6fbc"
-						stroke-width="15.547"
-						stroke-opacity="1"
+						strokeWidth="15.547"
+						strokeOpacity="1"
 						stroke-miterlimit="4"
 					/>
 				</g>
@@ -69,14 +69,14 @@ export const LogoMinimal: React.FC<{
 				<g clip-path="url(#068d4c4bb3)">
 					<g clip-path="url(#90f7f1637d)">
 						<path
-							stroke-linecap="butt"
+							strokeLinecap="butt"
 							transform="matrix(2.064296, 0, 0, 2.064296, 70.583964, 70.58398)"
 							fill="none"
 							stroke-linejoin="miter"
 							d="M 162.00001 -0.000944244 C 72.530587 -0.000944244 -0.000936251 72.530579 -0.000936251 162.000002 C -0.000936251 251.469425 72.530587 323.999056 162.00001 323.999056 C 251.469433 323.999056 323.999064 251.469425 323.999064 162.000002 C 323.999064 72.530579 251.469433 -0.000944244 162.00001 -0.000944244 Z M 162.00001 -0.000944244 "
 							stroke="#ffffff"
-							stroke-width="2.906559"
-							stroke-opacity="1"
+							strokeWidth="2.906559"
+							strokeOpacity="1"
 							stroke-miterlimit="4"
 						/>
 					</g>
