@@ -45,7 +45,7 @@ export const RemotionRoot: React.FC = () => {
 							meetupDetails: meetup,
 						} 
 					}
-					durationInFrames={240 * 6} // Adjust based on total number of slides
+					durationInFrames={180 * 7} // Adjust based on total number of slides
 					fps={30}
 					width={720}
 					height={1280}
