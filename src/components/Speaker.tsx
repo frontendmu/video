@@ -1,15 +1,13 @@
+import { zColor } from '@remotion/zod-types';
 import {
-	AbsoluteFill,
 	Img,
-	useCurrentFrame,
-	useVideoConfig,
 	interpolate,
+	useCurrentFrame,
+	useVideoConfig
 } from 'remotion';
-import {Subtitle} from './Subtitle';
-import {Title} from './Title';
-import {z} from 'zod';
-import {zColor} from '@remotion/zod-types';
-import {Background} from './Background/Background';
+import { z } from 'zod';
+import { Subtitle } from './Subtitle';
+import { Title } from './Title';
 
 export const GithubUsername = z.string().nullable().optional();
 
@@ -96,25 +94,22 @@ export const Speaker: React.FC<z.infer<typeof myCompSchema>> = ({
 		},
 	);
 	return (
-		<AbsoluteFill className="bg-gray-100 items-center justify-center relative">
-			<Background />
-			<div className="flex flex-col gap-8 items-center relative z-100">
-				<Title
-					titleText={sessionText}
-					titleColor={titleColor}
-					titleOpacity={opacity}
-					titleSize="text-6xl"
-					titleOtherClasses="leading-snug tracking-wide "
-				/>
-				<ProfilePicture githubUsername={githubUsername} />
-				<Title
-					titleText={speakerName}
-					titleColor={titleColor}
-					titleSize="text-5xl"
-					titleOpacity={opacity}
-				/>
-				<SpeakerJob speakerJob={speakerJob} titleColor={titleColor} />
-			</div>
-		</AbsoluteFill>
+		<div className="flex flex-col gap-8 items-center relative z-100">
+			<Title
+				titleText={sessionText}
+				titleColor={titleColor}
+				titleOpacity={opacity}
+				titleSize="text-6xl"
+				titleOtherClasses="leading-snug tracking-wide "
+			/>
+			<ProfilePicture githubUsername={githubUsername} />
+			<Title
+				titleText={speakerName}
+				titleColor={titleColor}
+				titleSize="text-5xl"
+				titleOpacity={opacity}
+			/>
+			<SpeakerJob speakerJob={speakerJob} titleColor={titleColor} />
+		</div>
 	);
 };

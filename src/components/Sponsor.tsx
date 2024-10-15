@@ -1,15 +1,13 @@
+import { zColor } from '@remotion/zod-types';
 import {
-	AbsoluteFill,
 	Img,
-	useCurrentFrame,
 	interpolate,
-	useVideoConfig,
+	useCurrentFrame,
+	useVideoConfig
 } from 'remotion';
-import {Title} from './Title';
-import {z} from 'zod';
-import {Background} from './Background/Background';
-import {zColor} from '@remotion/zod-types';
-import {Subtitle} from './Subtitle';
+import { z } from 'zod';
+import { Subtitle } from './Subtitle';
+import { Title } from './Title';
 
 export const SponsorDetail = z.object({
 	logo: z.string(),
@@ -67,25 +65,22 @@ export const Sponsor: React.FC<z.infer<typeof myCompSchema>> = ({
 		},
 	);
 	return (
-		<AbsoluteFill className="bg-gray-100 items-center justify-center relative">
-			<Background />
-			<div className="flex flex-col gap-y-16 items-center relative z-100">
-				<Title
-					titleText={titleText}
-					titleColor={titleColor}
-					titleSize="text-6xl"
-					titleOpacity={opacity}
-					titleWidth="w-12/12"
-				/>
-				<SponsorLogo sponsorDetail={sponsorDetail} />
-				<Subtitle
-					titleText={sponsorDetail.venue}
-					titleColor={titleColor}
-					titleOpacity={opacity}
-					titleSize="text-5xl"
-					titleWidth="w-full"
-				/>
-			</div>
-		</AbsoluteFill>
+		<div className="flex flex-col gap-y-16 items-center relative z-100">
+			<Title
+				titleText={titleText}
+				titleColor={titleColor}
+				titleSize="text-6xl"
+				titleOpacity={opacity}
+				titleWidth="w-12/12"
+			/>
+			<SponsorLogo sponsorDetail={sponsorDetail} />
+			<Subtitle
+				titleText={sponsorDetail.venue}
+				titleColor={titleColor}
+				titleOpacity={opacity}
+				titleSize="text-5xl"
+				titleWidth="w-full"
+			/>
+		</div>
 	);
 };

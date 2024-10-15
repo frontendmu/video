@@ -1,11 +1,12 @@
-import React from 'react';
-import {Sequence, useVideoConfig, Audio, staticFile} from 'remotion';
-import {Cover} from './Cover';
-import {Rsvp} from './Rsvp';
-import {Speaker} from './Speaker';
+import React, { PropsWithChildren } from 'react';
+import { AbsoluteFill, Audio, Sequence, staticFile, useVideoConfig } from 'remotion';
+import { MidnightCover } from '../components/Cover/MidnightCover';
+import { Rsvp } from '../components/Rsvp';
+import { Speaker } from '../components/Speaker';
 // import meetupDetails from '../latest_meetup_details.json';
-import {Sponsor, SponsorDetail} from './Sponsor';
-import {z} from 'zod';
+import { z } from 'zod';
+import { WaveBackground } from '../components/WaveBackground';
+import { Sponsor, SponsorDetail } from '../components/Sponsor';
 
 export const SessionDetails = z.object({
 	speakerName: z.string(),
@@ -26,7 +27,16 @@ export const MeetupDetails = z.object({
 	meetupDetails: SingleMeetup,
 });
 
-export const MeetupVideo: React.FC<z.infer<typeof MeetupDetails>> = ({
+function FrameWrapper({children}: PropsWithChildren) {
+	return (
+		<AbsoluteFill className="flex items-center justify-center relative from-[#182034] to-[#0a1329] bg-gradient-to-tl">
+			<WaveBackground />
+			{children}
+		</AbsoluteFill>
+	)
+}
+
+export const BlackPantherTemplate: React.FC<z.infer<typeof MeetupDetails>> = ({
 	meetupDetails,
 }) => {
 	const {fps} = useVideoConfig();
@@ -45,13 +55,15 @@ export const MeetupVideo: React.FC<z.infer<typeof MeetupDetails>> = ({
 			/>
 
 			<Sequence name="Cover" durationInFrames={slideDuration}>
-				<Cover
-					meetupDate={meetupDetails.meetupDate}
-					titleColor={titleColor}
-					secondaryTitleColor={secondaryTitleColor}
-					logoColor={logoColor}
-					meetupTitle={meetupDetails.meetupTitle}
-				/>
+				<FrameWrapper>
+					<MidnightCover
+						meetupDate={meetupDetails.meetupDate}
+						titleColor={titleColor}
+						secondaryTitleColor={secondaryTitleColor}
+						logoColor={logoColor}
+						meetupTitle={meetupDetails.meetupTitle}
+					/>
+				</FrameWrapper>
 			</Sequence>
 			{meetupDetails.sponsorsDetails.map((sponsor) => (
 				<Sequence
@@ -60,11 +72,13 @@ export const MeetupVideo: React.FC<z.infer<typeof MeetupDetails>> = ({
 					durationInFrames={slideDuration}
 					from={slideDuration}
 				>
-					<Sponsor
-						titleText="Sponsored By"
-						titleColor={titleColor}
-						sponsorDetail={sponsor}
-					/>
+					<FrameWrapper>
+						<Sponsor
+							titleText="Sponsored By"
+							titleColor={titleColor}
+							sponsorDetail={sponsor}
+						/>
+					</FrameWrapper>
 				</Sequence>
 			))}
 			{meetupDetails.sessionDetails.map((session, index) => (
@@ -75,13 +89,15 @@ export const MeetupVideo: React.FC<z.infer<typeof MeetupDetails>> = ({
 					durationInFrames={slideDuration}
 				>
 					{/* <div className='text-white'>{alert(session.sessionTitle)}</div> */}
-					<Speaker
-						sessionText={session.sessionTitle}
-						titleColor={titleColor}
-						githubUsername={session.speakerGitHub}
-						speakerName={session.speakerName}
-						speakerJob={session.speakerJob}
-					/>
+					<FrameWrapper>
+						<Speaker
+							sessionText={session.sessionTitle}
+							titleColor={titleColor}
+							githubUsername={session.speakerGitHub}
+							speakerName={session.speakerName}
+							speakerJob={session.speakerJob}
+						/>
+					</FrameWrapper>
 				</Sequence>
 			))}
 			<Sequence
@@ -92,11 +108,13 @@ export const MeetupVideo: React.FC<z.infer<typeof MeetupDetails>> = ({
 					slideDuration * 2
 				}
 			>
-				<Rsvp
-					titleColor={titleColor}
-					titleText="Rsvp now on frontend.mu"
-					meetupUrl={`frontend.mu/meetup/${meetupDetails.meetupId}`}
-				/>
+				<FrameWrapper>
+					<Rsvp
+						titleColor={titleColor}
+						titleText="Rsvp now on frontend.mu"
+						meetupUrl={`frontend.mu/meetup/${meetupDetails.meetupId}`}
+					/>
+				</FrameWrapper>
 			</Sequence>
 		</>
 	);
