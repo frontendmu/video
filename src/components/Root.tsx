@@ -37,6 +37,8 @@ function TemplateSwitch({template, setTemplate}: {template: Template, setTemplat
 			<select id="template" className="rounded-md px-2 py-1" defaultValue={template} onChange={handleTemplateChange}>
 				<option value="blackPanther">Black Panther</option>
 				<option value="snowWhite">Snow White</option>
+				<option value="squareRoot">Square Root</option>
+				<option value="youtube">Youtube</option>
 			</select>
 		</header>
 	)
