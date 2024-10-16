@@ -1,6 +1,10 @@
 {
 	"extends": "@remotion",
 	"env": {
-		"node": true
+		"node": true,
+	},
+	"rules": {
+		"react/self-closing-comp": "off",
+		"comma-dangle": "off"
 	}
 }

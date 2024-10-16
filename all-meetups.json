@@ -1,5 +1,916 @@
 [
   {
+    "meetupDate": "2025-04-19",
+    "sessionDetails": [],
+    "sponsorsDetails": [],
+    "meetupId": 53,
+    "meetupTitle": "The Web Conference 2025"
+  },
+  {
+    "meetupDate": "2024-11-23",
+    "sessionDetails": [],
+    "sponsorsDetails": [],
+    "meetupId": 60,
+    "meetupTitle": "The November Meetup"
+  },
+  {
+    "meetupDate": "2024-10-26",
+    "sessionDetails": [
+      {
+        "speakerName": "Joshua Iwugod",
+        "speakerGitHub": "iwugod",
+        "speakerJob": "",
+        "sessionTitle": "Create static html with partials, Old school way made easier"
+      },
+      {
+        "speakerName": "Sandeep Ramgolam",
+        "speakerGitHub": "MrSunshyne",
+        "speakerJob": "",
+        "sessionTitle": "Frontend News & Updates"
+      },
+      {
+        "speakerName": " Mervyn Manilall",
+        "speakerGitHub": "mervynmanilall",
+        "speakerJob": "",
+        "sessionTitle": "Feature flagging using Azure App Configuration"
+      },
+      {
+        "speakerName": "Jain Ramchurn",
+        "speakerGitHub": "k3ii",
+        "speakerJob": "",
+        "sessionTitle": "Skyrocket your git workflow"
+      },
+      {
+        "speakerName": "Dereck Lam Hon Wah",
+        "speakerGitHub": "derecklhw",
+        "speakerJob": "",
+        "sessionTitle": "Skyrocket your git workflow"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/47a95755-86a9-47c4-88c2-89c8991108f6.png",
+        "name": "MCB Digital Factory",
+        "darkbg": false,
+        "venue": "Digital Factory"
+      }
+    ],
+    "meetupId": 59,
+    "meetupTitle": "The October Meetup"
+  },
+  {
+    "meetupDate": "2024-09-28",
+    "sessionDetails": [
+      {
+        "speakerName": "Jain Ramchurn",
+        "speakerGitHub": "k3ii",
+        "speakerJob": "",
+        "sessionTitle": "Building CLI and TUI tools in Rust"
+      },
+      {
+        "speakerName": "Mahima Ramgolam",
+        "speakerGitHub": "mahima98",
+        "speakerJob": "",
+        "sessionTitle": "Exploring Nuxt Studio"
+      },
+      {
+        "speakerName": "Pritvi Jheengut",
+        "speakerGitHub": "Jheengut",
+        "speakerJob": "",
+        "sessionTitle": "Data protection laws in Mauritius"
+      },
+      {
+        "speakerName": "Sandeep Ramgolam",
+        "speakerGitHub": "MrSunshyne",
+        "speakerJob": "",
+        "sessionTitle": "The importance of side projects"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/29dedcfe-5f63-4c33-a0c5-160fc9d78d6e.png",
+        "name": "Swan",
+        "darkbg": false,
+        "venue": "Swan Head Office"
+      }
+    ],
+    "meetupId": 58,
+    "meetupTitle": "The September Meetup"
+  },
+  {
+    "meetupDate": "2024-08-24",
+    "sessionDetails": [
+      {
+        "speakerName": "Anish",
+        "speakerGitHub": "n-d-r-d-g",
+        "speakerJob": "",
+        "sessionTitle": "Contributing to an Open Source Community"
+      },
+      {
+        "speakerName": "Kevin Appadoo",
+        "speakerGitHub": "kevin-appadoo",
+        "speakerJob": "",
+        "sessionTitle": "Expo vs React Native - Choosing Expo for Mobile development ​"
+      },
+      {
+        "speakerName": "Houzair Koussa",
+        "speakerGitHub": "houzyk",
+        "speakerJob": "",
+        "sessionTitle": "Union & Intersection Types In TypeScript: A Deep Dive"
+      },
+      {
+        "speakerName": "Rayyan",
+        "speakerGitHub": "321zer0",
+        "speakerJob": "",
+        "sessionTitle": "Client-Server Data Exchange Mechanisms"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/6facfc10-cd82-42c4-9892-02bdbd967fd8.png",
+        "name": "Novity",
+        "darkbg": false,
+        "venue": "Novity Mauritius"
+      }
+    ],
+    "meetupId": 57,
+    "meetupTitle": "The August Meetup"
+  },
+  {
+    "meetupDate": "2024-07-19",
+    "sessionDetails": [
+      {
+        "speakerName": "Sandeep Ramgolam",
+        "speakerGitHub": "MrSunshyne",
+        "speakerJob": "",
+        "sessionTitle": "Nuxt 3 Workshop : Let's build an app to monitor power outages!"
+      },
+      {
+        "speakerName": "Cedric Poilly",
+        "speakerGitHub": "cedpoilly",
+        "speakerJob": "",
+        "sessionTitle": "Nuxt 3 Workshop : Let's build an app to monitor power outages!"
+      },
+      {
+        "speakerName": "Sandeep Ramgolam",
+        "speakerGitHub": "MrSunshyne",
+        "speakerJob": "",
+        "sessionTitle": "The Frontend Developer Career Path"
+      }
+    ],
+    "sponsorsDetails": [],
+    "meetupId": 56,
+    "meetupTitle": "Workshop by frontend.mu at DevCon2024"
+  },
+  {
+    "meetupDate": "2024-06-22",
+    "sessionDetails": [
+      {
+        "speakerName": "Ophelia Boamah Ampoh",
+        "speakerGitHub": "ophyboamah",
+        "speakerJob": "",
+        "sessionTitle": "Revolutionizing Web Layouts with CSS Container Queries"
+      },
+      {
+        "speakerName": "Yogin Kumar Suttroogun",
+        "speakerGitHub": "yogin-suttroogun",
+        "speakerJob": "",
+        "sessionTitle": "101 into the IOS World"
+      },
+      {
+        "speakerName": "Adarsh Hasnah",
+        "speakerGitHub": "adarshasnah",
+        "speakerJob": "",
+        "sessionTitle": "State Management in React using Jotai"
+      },
+      {
+        "speakerName": "Sandeep Ramgolam",
+        "speakerGitHub": "MrSunshyne",
+        "speakerJob": "",
+        "sessionTitle": "Open Discussions"
+      },
+      {
+        "speakerName": "Cedric Poilly",
+        "speakerGitHub": "cedpoilly",
+        "speakerJob": "",
+        "sessionTitle": "Open Discussions"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/c0217e58-7e39-4478-8497-7c114253cdb7.png",
+        "name": "ELCA Mauritius",
+        "darkbg": false,
+        "venue": "ELCA"
+      }
+    ],
+    "meetupId": 55,
+    "meetupTitle": "The June Meetup"
+  },
+  {
+    "meetupDate": "2024-05-18",
+    "sessionDetails": [
+      {
+        "speakerName": "Michaël Jules",
+        "speakerGitHub": "mgjules",
+        "speakerJob": "",
+        "sessionTitle": "Personalized Development Environment (PDE)"
+      },
+      {
+        "speakerName": "Khali Lame",
+        "speakerGitHub": "khalibloo",
+        "speakerJob": "",
+        "sessionTitle": "Building your website for everyone"
+      },
+      {
+        "speakerName": "Gaël Latouche ",
+        "speakerGitHub": "Ga-L",
+        "speakerJob": "",
+        "sessionTitle": "Building in public - Electoral Data Visualization in Streamlit  "
+      },
+      {
+        "speakerName": "Chervine Bhiwoo",
+        "speakerGitHub": "chervineb",
+        "speakerJob": "",
+        "sessionTitle": "Enhancing Frontend Security for Secure Development"
+      },
+      {
+        "speakerName": "Sandeep Ramgolam",
+        "speakerGitHub": "MrSunshyne",
+        "speakerJob": "",
+        "sessionTitle": "Scroll Driven Animations"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/a7f8bf45-aa2c-4d5f-ba98-8b1a7a6cc191.png",
+        "name": "Dayforce",
+        "darkbg": false,
+        "venue": "Dayforce Mauritius"
+      }
+    ],
+    "meetupId": 54,
+    "meetupTitle": "May Meetup"
+  },
+  {
+    "meetupDate": "2024-04-27",
+    "sessionDetails": [
+      {
+        "speakerName": "Anand Ramrooch",
+        "speakerGitHub": "AnandR362",
+        "speakerJob": "",
+        "sessionTitle": "A journey with microprocessors"
+      },
+      {
+        "speakerName": "Jordan Bienvenue",
+        "speakerGitHub": "JordanBienvenue",
+        "speakerJob": "",
+        "sessionTitle": "Code and Honey"
+      },
+      {
+        "speakerName": "Sandeep Ramgolam",
+        "speakerGitHub": "MrSunshyne",
+        "speakerJob": "",
+        "sessionTitle": "Frontend News & Updates"
+      },
+      {
+        "speakerName": "Bernard Joseph Jean Bruno",
+        "speakerGitHub": "eznix86",
+        "speakerJob": "",
+        "sessionTitle": "Hacking with Zed, The New Code Editor"
+      },
+      {
+        "speakerName": "Ruben Pillay Vurdapen",
+        "speakerGitHub": "Rubenvur",
+        "speakerJob": "",
+        "sessionTitle": "Concept AI tool to help manual testing"
+      },
+      {
+        "speakerName": "Farhanaaz Curumthaullee",
+        "speakerGitHub": "Farhanaaz2805",
+        "speakerJob": "",
+        "sessionTitle": "Concept AI tool to help manual testing"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/cd1037b1-27a7-473c-b8ce-dea9419f979f.jpeg",
+        "name": "Publicis Global Delivery",
+        "darkbg": false,
+        "venue": "Publicis Global Delivery"
+      }
+    ],
+    "meetupId": 52,
+    "meetupTitle": "April Meetup"
+  },
+  {
+    "meetupDate": "2024-03-28",
+    "sessionDetails": [
+      {
+        "speakerName": "Raphaël Damevin",
+        "speakerGitHub": "damevin",
+        "speakerJob": "",
+        "sessionTitle": "Auth for your Nuxt application with Supabase"
+      },
+      {
+        "speakerName": "Cedric Poilly",
+        "speakerGitHub": "cedpoilly",
+        "speakerJob": "",
+        "sessionTitle": "Web sockets in Nitro"
+      },
+      {
+        "speakerName": "Sandeep Ramgolam",
+        "speakerGitHub": "MrSunshyne",
+        "speakerJob": "",
+        "sessionTitle": "Data fetching strategies"
+      }
+    ],
+    "sponsorsDetails": [],
+    "meetupId": 51,
+    "meetupTitle": "March Meetup Live on Twitch"
+  },
+  {
+    "meetupDate": "2024-03-02",
+    "sessionDetails": [
+      {
+        "speakerName": "Michaël Jules",
+        "speakerGitHub": "mgjules",
+        "speakerJob": "",
+        "sessionTitle": "import 'htmx.org'"
+      },
+      {
+        "speakerName": "Mootien Kasarajen",
+        "speakerGitHub": "MKov-KM",
+        "speakerJob": "",
+        "sessionTitle": "Streamlit"
+      },
+      {
+        "speakerName": "Dereck Lam Hon Wah",
+        "speakerGitHub": "derecklhw",
+        "speakerJob": "",
+        "sessionTitle": "GIT LFS - Large File Storage Management in Version Control"
+      },
+      {
+        "speakerName": "Sandeep Ramgolam",
+        "speakerGitHub": "MrSunshyne",
+        "speakerJob": "",
+        "sessionTitle": "Frontend News & Updates"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/563a3e1d-db03-4b27-8712-efb035e99d4d.png",
+        "name": "SD Worx",
+        "darkbg": false,
+        "venue": "SD Worx"
+      }
+    ],
+    "meetupId": 50,
+    "meetupTitle": "February Meetup"
+  },
+  {
+    "meetupDate": "2023-11-18",
+    "sessionDetails": [
+      {
+        "speakerName": "Abdallah Yashir Ramsing",
+        "speakerGitHub": "abdallahYashir",
+        "speakerJob": "",
+        "sessionTitle": "Navigating Monorepos: Your Gentle Introduction to Efficient Web Development"
+      },
+      {
+        "speakerName": "Alexandre Bissessur",
+        "speakerGitHub": "xelab04",
+        "speakerJob": "",
+        "sessionTitle": "Understanding the basics of Kubernetes"
+      },
+      {
+        "speakerName": "Cedric Poilly",
+        "speakerGitHub": "cedpoilly",
+        "speakerJob": "",
+        "sessionTitle": "Trivia is more fun with a touch of AI"
+      },
+      {
+        "speakerName": "Ankshita Maunthrooa",
+        "speakerGitHub": "ankshita02",
+        "speakerJob": "",
+        "sessionTitle": " Golang for beginners "
+      }
+    ],
+    "sponsorsDetails": [],
+    "meetupId": 49,
+    "meetupTitle": "November Meetup"
+  },
+  {
+    "meetupDate": "2023-09-23",
+    "sessionDetails": [
+      {
+        "speakerName": "Nicolas Strands",
+        "speakerGitHub": "nicolasstrands",
+        "speakerJob": "",
+        "sessionTitle": "Intro to Supabase"
+      },
+      {
+        "speakerName": "Jain Ramchurn",
+        "speakerGitHub": "k3ii",
+        "speakerJob": "",
+        "sessionTitle": "Best Practices for Containerizing a NodeJS Application"
+      },
+      {
+        "speakerName": "Sandeep Ramgolam",
+        "speakerGitHub": "MrSunshyne",
+        "speakerJob": "",
+        "sessionTitle": "Ways to increase developer happiness"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/42bc2d01-b819-47ba-8c54-2e478c01ebb7.png",
+        "name": "Zendō",
+        "darkbg": false,
+        "venue": "Zendō"
+      },
+      {
+        "logo": "https://directus.frontend.mu/assets/128ebc03-9ad9-4a15-9a15-903b5987b216.png",
+        "name": "HIK Vision",
+        "darkbg": false,
+        "venue": "Zendō"
+      }
+    ],
+    "meetupId": 48,
+    "meetupTitle": "September Meetup"
+  },
+  {
+    "meetupDate": "2023-08-26",
+    "sessionDetails": [
+      {
+        "speakerName": "Houzair Koussa",
+        "speakerGitHub": "houzyk",
+        "speakerJob": "",
+        "sessionTitle": "Philosophy and Code"
+      },
+      {
+        "speakerName": "Saamiyah Peerun",
+        "speakerGitHub": "saamiyah",
+        "speakerJob": "",
+        "sessionTitle": "Go from attendee to speaker!"
+      },
+      {
+        "speakerName": "Cedric Poilly",
+        "speakerGitHub": "cedpoilly",
+        "speakerJob": "",
+        "sessionTitle": "Let's play"
+      },
+      {
+        "speakerName": "Jeshta Bhoyedhur",
+        "speakerGitHub": "jjeshta",
+        "speakerJob": "",
+        "sessionTitle": "Basic Security Practices for Web Application Development"
+      },
+      {
+        "speakerName": "Alberto De Santis",
+        "speakerGitHub": "hallede",
+        "speakerJob": "",
+        "sessionTitle": "First steps in your journey from Junior to Senior"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/d7175af9-371c-457b-b7fc-a48b93f27539.png",
+        "name": "UDM",
+        "darkbg": false,
+        "venue": "Universite des Mascareignes"
+      },
+      {
+        "logo": "https://directus.frontend.mu/assets/1c003401-f0e0-44cd-b187-167e78caf9dc.png",
+        "name": "Ceridian",
+        "darkbg": false,
+        "venue": "Universite des Mascareignes"
+      }
+    ],
+    "meetupId": 47,
+    "meetupTitle": "August Meetup"
+  },
+  {
+    "meetupDate": "2023-06-24",
+    "sessionDetails": [
+      {
+        "speakerName": "Francis Kikulwe",
+        "speakerGitHub": "franc15",
+        "speakerJob": "",
+        "sessionTitle": "React state management with bear minimum🐻"
+      },
+      {
+        "speakerName": "Houzair Koussa",
+        "speakerGitHub": "houzyk",
+        "speakerJob": "",
+        "sessionTitle": "An overview of Functional Programming"
+      },
+      {
+        "speakerName": "Arvind Tacouri",
+        "speakerGitHub": "luvnish",
+        "speakerJob": "",
+        "sessionTitle": "Life of JS in Marketing"
+      },
+      {
+        "speakerName": "Jordan Bienvenue",
+        "speakerGitHub": "JordanBienvenue",
+        "speakerJob": "",
+        "sessionTitle": "NextJS & Shadcn"
+      },
+      {
+        "speakerName": "Bernard Joseph Jean Bruno",
+        "speakerGitHub": "eznix86",
+        "speakerJob": "",
+        "sessionTitle": "NextJS, TRpc & Prisma"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/3e28ae40-2321-419b-988f-40d64f773479.png",
+        "name": "Alludo",
+        "darkbg": false,
+        "venue": "Alludo"
+      }
+    ],
+    "meetupId": 45,
+    "meetupTitle": "React, Zustand, FP & Marketing"
+  },
+  {
+    "meetupDate": "2023-05-20",
+    "sessionDetails": [
+      {
+        "speakerName": "Saamiyah Peerun",
+        "speakerGitHub": "saamiyah",
+        "speakerJob": "",
+        "sessionTitle": "Git Going: Starting your Version Control Journey with Git"
+      },
+      {
+        "speakerName": "Michaël Jules",
+        "speakerGitHub": "mgjules",
+        "speakerJob": "",
+        "sessionTitle": "Stand out from the crowd - Tips to improve your CV"
+      },
+      {
+        "speakerName": "Ish Sookun",
+        "speakerGitHub": "ishwon",
+        "speakerJob": "",
+        "sessionTitle": "Career Path in the IT industry"
+      },
+      {
+        "speakerName": "Sandeep Ramgolam",
+        "speakerGitHub": "MrSunshyne",
+        "speakerJob": "",
+        "sessionTitle": "How to get started with Frontend Dev"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/b09873d2-7b5d-4d4f-b5e1-f0656fae0acb.png",
+        "name": "Middlesex University Mauritius",
+        "darkbg": true,
+        "venue": "Middlesex University Mauritius"
+      },
+      {
+        "logo": "https://directus.frontend.mu/assets/79e36777-2b76-4e56-b6fd-4f677fdc06fe.png",
+        "name": "Bolt Talent Solutions",
+        "darkbg": false,
+        "venue": "Middlesex University Mauritius"
+      },
+      {
+        "logo": "https://directus.frontend.mu/assets/05cb1fd6-02a4-4c9c-92da-19515c308a15.jpg",
+        "name": "Red and Yellow",
+        "darkbg": false,
+        "venue": "Middlesex University Mauritius"
+      }
+    ],
+    "meetupId": 44,
+    "meetupTitle": "Git, CVs & getting in to tech"
+  },
+  {
+    "meetupDate": "2023-04-29",
+    "sessionDetails": [
+      {
+        "speakerName": "Luisa Bruno",
+        "speakerGitHub": "luvibruno",
+        "speakerJob": "",
+        "sessionTitle": "Behind the scenes: Insights into the IT Recruitment Process"
+      },
+      {
+        "speakerName": "Michaël Jules",
+        "speakerGitHub": "mgjules",
+        "speakerJob": "",
+        "sessionTitle": "Stand out from the crowd - Tips to improve your CV"
+      },
+      {
+        "speakerName": "Cedric Poilly",
+        "speakerGitHub": "cedpoilly",
+        "speakerJob": "",
+        "sessionTitle": "Freelancing : do's and don'ts"
+      },
+      {
+        "speakerName": "Nayar Joolfoo",
+        "speakerGitHub": "Nayar",
+        "speakerJob": "",
+        "sessionTitle": "Entrepreneurship Tips"
+      },
+      {
+        "speakerName": "Asma Dinat",
+        "speakerGitHub": null,
+        "speakerJob": "",
+        "sessionTitle": "Video interviewing"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/d39d2791-76ba-4071-8a37-41018a25e14d.png",
+        "name": "Developers Institute Mauritius",
+        "darkbg": false,
+        "venue": "Developers Institute Mauritius"
+      }
+    ],
+    "meetupId": 43,
+    "meetupTitle": "Interviews / CVs / Freelancing"
+  },
+  {
+    "meetupDate": "2023-03-25",
+    "sessionDetails": [
+      {
+        "speakerName": "Hoolan Naipal",
+        "speakerGitHub": "Hoolan01",
+        "speakerJob": "",
+        "sessionTitle": "Maintainable and scalable CSS using BEM"
+      },
+      {
+        "speakerName": "Kenny Oozageer",
+        "speakerGitHub": null,
+        "speakerJob": "",
+        "sessionTitle": "Maintainable and scalable CSS using BEM"
+      },
+      {
+        "speakerName": "Sandy Ramiah",
+        "speakerGitHub": "sandyr26",
+        "speakerJob": "",
+        "sessionTitle": "Powerful Routing & Optimizing Images with NextJS"
+      },
+      {
+        "speakerName": "Sandeep Ramgolam",
+        "speakerGitHub": "MrSunshyne",
+        "speakerJob": "",
+        "sessionTitle": "WebContainers - NodeJS in your browser"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/41996942-cd3c-42f0-ac41-33d9e9c39d35.png",
+        "name": "Providus",
+        "darkbg": true,
+        "venue": "Providus"
+      }
+    ],
+    "meetupId": 42,
+    "meetupTitle": "NextJS / WebContainers / CSS"
+  },
+  {
+    "meetupDate": "2023-02-25",
+    "sessionDetails": [
+      {
+        "speakerName": " Mervyn Manilall",
+        "speakerGitHub": "mervynmanilall",
+        "speakerJob": "",
+        "sessionTitle": "Promises v/s Observables"
+      },
+      {
+        "speakerName": "Abdallah Yashir Ramsing",
+        "speakerGitHub": "abdallahYashir",
+        "speakerJob": "",
+        "sessionTitle": "Visual UI Regression Testing with BackstopJS"
+      },
+      {
+        "speakerName": "Sandeep Ramgolam",
+        "speakerGitHub": "MrSunshyne",
+        "speakerJob": "",
+        "sessionTitle": "Frontend news and udpates"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/47a95755-86a9-47c4-88c2-89c8991108f6.png",
+        "name": "MCB Digital Factory",
+        "darkbg": false,
+        "venue": "MCB Digital Factory"
+      }
+    ],
+    "meetupId": 41,
+    "meetupTitle": "Promises, Testing and frontend updates"
+  },
+  {
+    "meetupDate": "2022-10-29",
+    "sessionDetails": [
+      {
+        "speakerName": "Aditya Bholah",
+        "speakerGitHub": "reallyaditya",
+        "speakerJob": "",
+        "sessionTitle": "Data Visualization"
+      },
+      {
+        "speakerName": "Renghen",
+        "speakerGitHub": "renghen",
+        "speakerJob": "",
+        "sessionTitle": "Public speaking for developers"
+      },
+      {
+        "speakerName": "Kushul Soomaree",
+        "speakerGitHub": "kushul",
+        "speakerJob": "",
+        "sessionTitle": "Cool CSS tricks"
+      },
+      {
+        "speakerName": "Adarsh Hasnah",
+        "speakerGitHub": "adarshasnah",
+        "speakerJob": "",
+        "sessionTitle": "The evolution of web development"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/c0217e58-7e39-4478-8497-7c114253cdb7.png",
+        "name": "ELCA Mauritius",
+        "darkbg": false,
+        "venue": "ELCA Mauritius"
+      }
+    ],
+    "meetupId": 40,
+    "meetupTitle": "October Meetup"
+  },
+  {
+    "meetupDate": "2022-09-24",
+    "sessionDetails": [
+      {
+        "speakerName": "Sandeep Ramgolam",
+        "speakerGitHub": "MrSunshyne",
+        "speakerJob": "",
+        "sessionTitle": "Upcoming features of CSS"
+      },
+      {
+        "speakerName": "Michaël Jules",
+        "speakerGitHub": "mgjules",
+        "speakerJob": "",
+        "sessionTitle": "UNO CSS"
+      },
+      {
+        "speakerName": "Saamiyah Peerun",
+        "speakerGitHub": "saamiyah",
+        "speakerJob": "",
+        "sessionTitle": "Styled-Components, a state of ambivalence"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/650a869d-aa12-4d76-9a31-0867b7dac13b.jpg",
+        "name": "Objectivity",
+        "darkbg": false,
+        "venue": "Objectivity"
+      }
+    ],
+    "meetupId": 39,
+    "meetupTitle": "The CSS Meetup "
+  },
+  {
+    "meetupDate": "2022-08-20",
+    "sessionDetails": [
+      {
+        "speakerName": "Michaël Jules",
+        "speakerGitHub": "mgjules",
+        "speakerJob": "",
+        "sessionTitle": "Astro: fast websites next-gen island architecture"
+      },
+      {
+        "speakerName": "Sandeep Ramgolam",
+        "speakerGitHub": "MrSunshyne",
+        "speakerJob": "",
+        "sessionTitle": "Bun a fast all-in-one JavaScript runtime"
+      },
+      {
+        "speakerName": "Mahima Ramgolam",
+        "speakerGitHub": "mahima98",
+        "speakerJob": "",
+        "sessionTitle": "Sli.dev - Presentation tool for developers"
+      },
+      {
+        "speakerName": "Jordan Bienvenue",
+        "speakerGitHub": "JordanBienvenue",
+        "speakerJob": "",
+        "sessionTitle": "Photogrammetry"
+      },
+      {
+        "speakerName": "Arwin Neil Baichoo",
+        "speakerGitHub": "arwinneil",
+        "speakerJob": "",
+        "sessionTitle": "Web Assembly"
+      },
+      {
+        "speakerName": "Percy Mamedy",
+        "speakerGitHub": "percymamedy",
+        "speakerJob": "",
+        "sessionTitle": "Splade - The magic of Inertia.js with the simplicity of Blade"
+      },
+      {
+        "speakerName": "Renghen",
+        "speakerGitHub": "renghen",
+        "speakerJob": "",
+        "sessionTitle": "Carbon Lang"
+      },
+      {
+        "speakerName": "Abdur-Rahmaan Janhangeer",
+        "speakerGitHub": "Abdur-rahmaanJ",
+        "speakerJob": "",
+        "sessionTitle": "Contracting: Sharpening the edge to deliver"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/2c8a85ac-885a-4be5-a551-4ccaafdbe6b4.png",
+        "name": "Acensi Mauritius Ltd",
+        "darkbg": false,
+        "venue": "Acensi Mauritius Ltd"
+      }
+    ],
+    "meetupId": 38,
+    "meetupTitle": "Fancy New Tech"
+  },
+  {
+    "meetupDate": "2022-07-23",
+    "sessionDetails": [
+      {
+        "speakerName": "Ish Sookun",
+        "speakerGitHub": "ishwon",
+        "speakerJob": "",
+        "sessionTitle": "Laravel Livewire"
+      },
+      {
+        "speakerName": "Percy Mamedy",
+        "speakerGitHub": "percymamedy",
+        "speakerJob": "",
+        "sessionTitle": "Modern monolith with Laravel & InertiaJs"
+      },
+      {
+        "speakerName": "Ravish Dussaruth",
+        "speakerGitHub": "ravishdussaruth",
+        "speakerJob": "",
+        "sessionTitle": "Setting up Laravel & NextJs with Breeze"
+      },
+      {
+        "speakerName": "Muhammad Yusuf AbdoolSatar",
+        "speakerGitHub": "fluxynet",
+        "speakerJob": "",
+        "sessionTitle": "How to structure a go program"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/ef87c8c9-3497-4b21-91c9-37a73d04661b.jpg",
+        "name": "XEFI Mauritius",
+        "darkbg": false,
+        "venue": "XEFI Mauritius"
+      }
+    ],
+    "meetupId": 37,
+    "meetupTitle": "Laravel for Front-end Devs"
+  },
+  {
+    "meetupDate": "2022-06-25",
+    "sessionDetails": [
+      {
+        "speakerName": "Kushul Soomaree",
+        "speakerGitHub": "kushul",
+        "speakerJob": "",
+        "sessionTitle": "UI / UX & Web Accssibility"
+      },
+      {
+        "speakerName": "Kherin Bundhoo",
+        "speakerGitHub": "kherin",
+        "speakerJob": "",
+        "sessionTitle": "Designing micro interaction on the web"
+      },
+      {
+        "speakerName": "Sandeep Ramgolam",
+        "speakerGitHub": "MrSunshyne",
+        "speakerJob": "",
+        "sessionTitle": "Infinite themes with CSS Variables"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/b305ce94-a57c-4ffb-8560-0876f1e6c5ea.jpg",
+        "name": "Outremer Telecom",
+        "darkbg": false,
+        "venue": "Outremer Telecom"
+      }
+    ],
+    "meetupId": 36,
+    "meetupTitle": "UI/UX"
+  },
+  {
     "meetupDate": "2022-05-21",
     "sessionDetails": [
       {
@@ -72,291 +983,83 @@
     "meetupTitle": "Vue / Tailwind / OpenData"
   },
   {
-    "meetupDate": "2016-07-30",
+    "meetupDate": "2020-10-10",
     "sessionDetails": [
-      {
-        "speakerName": "Umar Waliyullah",
-        "speakerGitHub": "umarmw",
-        "speakerJob": "",
-        "sessionTitle": "A reasonable coding approach to CSS and Sass"
-      },
-      {
-        "speakerName": "Humeira Diljore",
-        "speakerGitHub": "Humeira",
-        "speakerJob": "",
-        "sessionTitle": "Vue.js Jumpstart"
-      },
-      {
-        "speakerName": "David Dias",
-        "speakerGitHub": "thedaviddias",
-        "speakerJob": "",
-        "sessionTitle": "Le futur, c'est maintenant avec CSS4"
-      },
-      {
-        "speakerName": "David Dias",
-        "speakerGitHub": "thedaviddias",
-        "speakerJob": "",
-        "sessionTitle": "Front-End developers Mauritius presentation"
-      }
-    ],
-    "sponsorsDetails": [],
-    "meetupId": 20,
-    "meetupTitle": "#1 Front-End Mauritius Meetup September 2016"
-  },
-  {
-    "meetupDate": "2018-01-20",
-    "sessionDetails": [],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/bea584e0-3795-413c-977c-cc91db3c9a54.jpg",
-        "name": "LSL Digital",
-        "darkbg": false,
-        "venue": "LSL Digital"
-      }
-    ],
-    "meetupId": 21,
-    "meetupTitle": "Front-End Coders Meetup"
-  },
-  {
-    "meetupDate": "2018-02-03",
-    "sessionDetails": [
-      {
-        "speakerName": "Sandeep Ramgolam",
-        "speakerGitHub": "MrSunshyne",
-        "speakerJob": "",
-        "sessionTitle": "A keylogger using CSS only"
-      },
-      {
-        "speakerName": "Cedric Poilly",
-        "speakerGitHub": "cedpoilly",
-        "speakerJob": "",
-        "sessionTitle": "Going Freelance"
-      },
-      {
-        "speakerName": "Kushul Soomaree",
-        "speakerGitHub": "kushul",
-        "speakerJob": "",
-        "sessionTitle": "Discover CSS Grid"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/0232448a-db1c-4092-b72f-74f772be21ce.jpg",
-        "name": "LSL Digital",
-        "darkbg": false,
-        "venue": "LSL Digital"
-      }
-    ],
-    "meetupId": 22,
-    "meetupTitle": "Freelancing / CSS Grid"
-  },
-  {
-    "meetupDate": "2018-09-22",
-    "sessionDetails": [
-      {
-        "speakerName": "Saamiyah Peerun",
-        "speakerGitHub": "saamiyah",
-        "speakerJob": "",
-        "sessionTitle": "TypeScript or, learning to trust the compiler"
-      },
-      {
-        "speakerName": "Pritvi Jheengut",
-        "speakerGitHub": "Jheengut",
-        "speakerJob": "",
-        "sessionTitle": "How KDE is perfect for you"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/9615c3b8-e20e-4d96-ab42-8c0434eefc6a.png",
-        "name": "Extension Interactive",
-        "darkbg": false,
-        "venue": "Extension Interactive"
-      }
-    ],
-    "meetupId": 23,
-    "meetupTitle": "TypeScript: A gentle introduction"
-  },
-  {
-    "meetupDate": "2019-02-23",
-    "sessionDetails": [
-      {
-        "speakerName": "Christophe Ramsamy",
-        "speakerGitHub": "kyushiro",
-        "speakerJob": "",
-        "sessionTitle": "Introduction to Heroku, or how to send your pet projects to the cloud"
-      },
-      {
-        "speakerName": "Bilkiss Dulloo",
-        "speakerGitHub": "Bilkiss",
-        "speakerJob": "",
-        "sessionTitle": "Translating an angular application into a mobile app with ionic"
-      },
-      {
-        "speakerName": "Rahul Thakoor",
-        "speakerGitHub": "rahul-thakoor",
-        "speakerJob": "",
-        "sessionTitle": "Hardware programming for javascript developers?"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/479dab83-3d03-4f43-ab4d-532267e15656.png",
-        "name": "MakerSpace",
-        "darkbg": false,
-        "venue": "Makerspace"
-      }
-    ],
-    "meetupId": 24,
-    "meetupTitle": "Front-End Coders x MSCC"
-  },
-  {
-    "meetupDate": "2019-06-22",
-    "sessionDetails": [
-      {
-        "speakerName": "Kushul Soomaree",
-        "speakerGitHub": "kushul",
-        "speakerJob": "",
-        "sessionTitle": "CSS Name Spaces"
-      },
-      {
-        "speakerName": "Cedric Poilly",
-        "speakerGitHub": "cedpoilly",
-        "speakerJob": "",
-        "sessionTitle": "Web Components"
-      },
-      {
-        "speakerName": "Christophe Ramsamy",
-        "speakerGitHub": "kyushiro",
-        "speakerJob": "",
-        "sessionTitle": "Functional JavaScript"
-      },
-      {
-        "speakerName": "Sandeep Ramgolam",
-        "speakerGitHub": "MrSunshyne",
-        "speakerJob": "",
-        "sessionTitle": "Tech Topic Discussions"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/802e6645-54fd-421b-8774-ea79a71a548b.png",
-        "name": "Techsphere labs",
-        "darkbg": false,
-        "venue": "Techsphere Labs"
-      }
-    ],
-    "meetupId": 25,
-    "meetupTitle": "CSS / Web Components / FunctionalJS"
-  },
-  {
-    "meetupDate": "2019-07-20",
-    "sessionDetails": [
-      {
-        "speakerName": "Humeira Diljore",
-        "speakerGitHub": "Humeira",
-        "speakerJob": "",
-        "sessionTitle": "Set up a blog with Netlify in less than 10 minutes."
-      },
       {
         "speakerName": "Michaël Jules",
         "speakerGitHub": "mgjules",
         "speakerJob": "",
-        "sessionTitle": "What the Svelte!?"
-      },
-      {
-        "speakerName": "Bilkiss Dulloo",
-        "speakerGitHub": "Bilkiss",
-        "speakerJob": "",
-        "sessionTitle": "Angular tips - solving some common problems"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/66bfbca9-ede7-467b-8919-714bbf6b19a2.png",
-        "name": "TECHSPHERE LABS",
-        "darkbg": false,
-        "venue": "Techsphere Labs"
-      }
-    ],
-    "meetupId": 26,
-    "meetupTitle": "Netlify / Svelte / Angular"
-  },
-  {
-    "meetupDate": "2019-09-21",
-    "sessionDetails": [
-      {
-        "speakerName": "Pritvi Jheengut",
-        "speakerGitHub": "Jheengut",
-        "speakerJob": "",
-        "sessionTitle": "Presentation & preparations for Hacktoberfest"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/2e954ecf-2001-4752-a8e5-2d2735d1a4d4.png",
-        "name": "Extension Interactive",
-        "darkbg": false,
-        "venue": "Extension Interactive"
-      }
-    ],
-    "meetupId": 27,
-    "meetupTitle": "Hacktoberfest x DevFest"
-  },
-  {
-    "meetupDate": "2020-02-01",
-    "sessionDetails": [],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/c3cc8699-0999-4fba-a2fd-454f0fc73c4d.png",
-        "name": "Bocasay",
-        "darkbg": false,
-        "venue": "Bocasay (Maurice)"
-      }
-    ],
-    "meetupId": 28,
-    "meetupTitle": "Front-End Coders Monthly - Jan 2020"
-  },
-  {
-    "meetupDate": "2020-02-15",
-    "sessionDetails": [
-      {
-        "speakerName": "Sandeep Ramgolam",
-        "speakerGitHub": "MrSunshyne",
-        "speakerJob": "",
-        "sessionTitle": "Contributing to the Devcon(2020) website"
+        "sessionTitle": "ReactivityEverywhere.js"
       },
       {
         "speakerName": "Cedric Poilly",
         "speakerGitHub": "cedpoilly",
         "speakerJob": "",
-        "sessionTitle": "Callbacks & Promises for asynchronous JavaScript"
+        "sessionTitle": "Developers are not just code writers"
       }
     ],
     "sponsorsDetails": [
       {
-        "logo": "https://directus.frontend.mu/assets/859b2e6e-20ab-4baa-91e2-1927946cafcc.png",
+        "logo": "https://directus.frontend.mu/assets/f378c423-3bc2-4a9d-9aff-2f36b1bf7958.png",
         "name": "Bocasay",
         "darkbg": false,
         "venue": "Bocasay (Maurice)"
       }
     ],
-    "meetupId": 29,
-    "meetupTitle": "Open Source / Promises / DevCon"
+    "meetupId": 34,
+    "meetupTitle": "Reactivity / Developers"
   },
   {
-    "meetupDate": "2020-03-21",
-    "sessionDetails": [],
-    "sponsorsDetails": [
+    "meetupDate": "2020-07-21",
+    "sessionDetails": [
       {
-        "logo": "https://directus.frontend.mu/assets/b09873d2-7b5d-4d4f-b5e1-f0656fae0acb.png",
-        "name": "Middlesex University Mauritius",
-        "darkbg": true,
-        "venue": "Middlesex University Mauritius"
+        "speakerName": "Jordan Bienvenue",
+        "speakerGitHub": "JordanBienvenue",
+        "speakerJob": "",
+        "sessionTitle": "An introduction to Cypress with Vue"
+      },
+      {
+        "speakerName": "Sandeep Ramgolam",
+        "speakerGitHub": "MrSunshyne",
+        "speakerJob": "",
+        "sessionTitle": "Open Discussions about Front-end Topics"
       }
     ],
-    "meetupId": 30,
-    "meetupTitle": "Front-End Coders Monthly #2 - 21 Mar 2020"
+    "sponsorsDetails": [],
+    "meetupId": 35,
+    "meetupTitle": "Testing & Accesibility"
+  },
+  {
+    "meetupDate": "2020-06-02",
+    "sessionDetails": [
+      {
+        "speakerName": "Christophe Ramsamy",
+        "speakerGitHub": "kyushiro",
+        "speakerJob": "",
+        "sessionTitle": " Exploring the console object"
+      },
+      {
+        "speakerName": "Joshua Iwugod",
+        "speakerGitHub": "iwugod",
+        "speakerJob": "",
+        "sessionTitle": "Basic Concepts of React"
+      },
+      {
+        "speakerName": "Jordan Bienvenue",
+        "speakerGitHub": "JordanBienvenue",
+        "speakerJob": "",
+        "sessionTitle": "A gentle look into Cypress"
+      },
+      {
+        "speakerName": "Sandeep Ramgolam",
+        "speakerGitHub": "MrSunshyne",
+        "speakerJob": "",
+        "sessionTitle": "Front-end Open Discussions"
+      }
+    ],
+    "sponsorsDetails": [],
+    "meetupId": 33,
+    "meetupTitle": "Javascript / React / Cypress"
   },
   {
     "meetupDate": "2020-05-05",
@@ -417,993 +1120,290 @@
     "meetupTitle": "VueJS Mauritius x Gopher Mauritius"
   },
   {
-    "meetupDate": "2020-06-02",
-    "sessionDetails": [
-      {
-        "speakerName": "Christophe Ramsamy",
-        "speakerGitHub": "kyushiro",
-        "speakerJob": "",
-        "sessionTitle": " Exploring the console object"
-      },
-      {
-        "speakerName": "Joshua Iwugod",
-        "speakerGitHub": "iwugod",
-        "speakerJob": "",
-        "sessionTitle": "Basic Concepts of React"
-      },
-      {
-        "speakerName": "Jordan Bienvenue",
-        "speakerGitHub": "JordanBienvenue",
-        "speakerJob": "",
-        "sessionTitle": "A gentle look into Cypress"
-      },
-      {
-        "speakerName": "Sandeep Ramgolam",
-        "speakerGitHub": "MrSunshyne",
-        "speakerJob": "",
-        "sessionTitle": "Front-end Open Discussions"
-      }
-    ],
-    "sponsorsDetails": [],
-    "meetupId": 33,
-    "meetupTitle": "Javascript / React / Cypress"
-  },
-  {
-    "meetupDate": "2020-10-10",
-    "sessionDetails": [
-      {
-        "speakerName": "Michaël Jules",
-        "speakerGitHub": "mgjules",
-        "speakerJob": "",
-        "sessionTitle": "ReactivityEverywhere.js"
-      },
-      {
-        "speakerName": "Cedric Poilly",
-        "speakerGitHub": "cedpoilly",
-        "speakerJob": "",
-        "sessionTitle": "Developers are not just code writers"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/f378c423-3bc2-4a9d-9aff-2f36b1bf7958.png",
-        "name": "Bocasay",
-        "darkbg": false,
-        "venue": "Bocasay (Maurice)"
-      }
-    ],
-    "meetupId": 34,
-    "meetupTitle": "Reactivity / Developers"
-  },
-  {
-    "meetupDate": "2020-07-21",
-    "sessionDetails": [
-      {
-        "speakerName": "Jordan Bienvenue",
-        "speakerGitHub": "JordanBienvenue",
-        "speakerJob": "",
-        "sessionTitle": "An introduction to Cypress with Vue"
-      },
-      {
-        "speakerName": "Sandeep Ramgolam",
-        "speakerGitHub": "MrSunshyne",
-        "speakerJob": "",
-        "sessionTitle": "Open Discussions about Front-end Topics"
-      }
-    ],
-    "sponsorsDetails": [],
-    "meetupId": 35,
-    "meetupTitle": "Testing & Accesibility"
-  },
-  {
-    "meetupDate": "2022-06-25",
-    "sessionDetails": [
-      {
-        "speakerName": "Kushul Soomaree",
-        "speakerGitHub": "kushul",
-        "speakerJob": "",
-        "sessionTitle": "UI / UX & Web Accssibility"
-      },
-      {
-        "speakerName": "Kherin Bundhoo",
-        "speakerGitHub": "kherin",
-        "speakerJob": "",
-        "sessionTitle": "Designing micro interaction on the web"
-      },
-      {
-        "speakerName": "Sandeep Ramgolam",
-        "speakerGitHub": "MrSunshyne",
-        "speakerJob": "",
-        "sessionTitle": "Infinite themes with CSS Variables"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/b305ce94-a57c-4ffb-8560-0876f1e6c5ea.jpg",
-        "name": "Outremer Telecom",
-        "darkbg": false,
-        "venue": "Outremer Telecom"
-      }
-    ],
-    "meetupId": 36,
-    "meetupTitle": "UI/UX"
-  },
-  {
-    "meetupDate": "2022-07-23",
-    "sessionDetails": [
-      {
-        "speakerName": "Ish Sookun",
-        "speakerGitHub": "ishwon",
-        "speakerJob": "",
-        "sessionTitle": "Laravel Livewire"
-      },
-      {
-        "speakerName": "Percy Mamedy",
-        "speakerGitHub": "percymamedy",
-        "speakerJob": "",
-        "sessionTitle": "Modern monolith with Laravel & InertiaJs"
-      },
-      {
-        "speakerName": "Ravish Dussaruth",
-        "speakerGitHub": "ravishdussaruth",
-        "speakerJob": "",
-        "sessionTitle": "Setting up Laravel & NextJs with Breeze"
-      },
-      {
-        "speakerName": "Muhammad Yusuf AbdoolSatar",
-        "speakerGitHub": "fluxynet",
-        "speakerJob": "",
-        "sessionTitle": "How to structure a go program"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/ef87c8c9-3497-4b21-91c9-37a73d04661b.jpg",
-        "name": "XEFI Mauritius",
-        "darkbg": false,
-        "venue": "XEFI Mauritius"
-      }
-    ],
-    "meetupId": 37,
-    "meetupTitle": "Laravel for Front-end Devs"
-  },
-  {
-    "meetupDate": "2022-08-20",
-    "sessionDetails": [
-      {
-        "speakerName": "Michaël Jules",
-        "speakerGitHub": "mgjules",
-        "speakerJob": "",
-        "sessionTitle": "Astro: fast websites next-gen island architecture"
-      },
-      {
-        "speakerName": "Sandeep Ramgolam",
-        "speakerGitHub": "MrSunshyne",
-        "speakerJob": "",
-        "sessionTitle": "Bun a fast all-in-one JavaScript runtime"
-      },
-      {
-        "speakerName": "Mahima Ramgolam",
-        "speakerGitHub": "mahima98",
-        "speakerJob": "",
-        "sessionTitle": "Sli.dev - Presentation tool for developers"
-      },
-      {
-        "speakerName": "Jordan Bienvenue",
-        "speakerGitHub": "JordanBienvenue",
-        "speakerJob": "",
-        "sessionTitle": "Photogrammetry"
-      },
-      {
-        "speakerName": "Arwin Neil Baichoo",
-        "speakerGitHub": "arwinneil",
-        "speakerJob": "",
-        "sessionTitle": "Web Assembly"
-      },
-      {
-        "speakerName": "Percy Mamedy",
-        "speakerGitHub": "percymamedy",
-        "speakerJob": "",
-        "sessionTitle": "Splade - The magic of Inertia.js with the simplicity of Blade"
-      },
-      {
-        "speakerName": "Renghen",
-        "speakerGitHub": "renghen",
-        "speakerJob": "",
-        "sessionTitle": "Carbon Lang"
-      },
-      {
-        "speakerName": "Abdur-Rahmaan Janhangeer",
-        "speakerGitHub": "Abdur-rahmaanJ",
-        "speakerJob": "",
-        "sessionTitle": "Contracting: Sharpening the edge to deliver"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/2c8a85ac-885a-4be5-a551-4ccaafdbe6b4.png",
-        "name": "Acensi Mauritius Ltd",
-        "darkbg": false,
-        "venue": "Acensi Mauritius Ltd"
-      }
-    ],
-    "meetupId": 38,
-    "meetupTitle": "Fancy New Tech"
-  },
-  {
-    "meetupDate": "2022-09-24",
-    "sessionDetails": [
-      {
-        "speakerName": "Sandeep Ramgolam",
-        "speakerGitHub": "MrSunshyne",
-        "speakerJob": "",
-        "sessionTitle": "Upcoming features of CSS"
-      },
-      {
-        "speakerName": "Michaël Jules",
-        "speakerGitHub": "mgjules",
-        "speakerJob": "",
-        "sessionTitle": "UNO CSS"
-      },
-      {
-        "speakerName": "Saamiyah Peerun",
-        "speakerGitHub": "saamiyah",
-        "speakerJob": "",
-        "sessionTitle": "Styled-Components, a state of ambivalence"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/650a869d-aa12-4d76-9a31-0867b7dac13b.jpg",
-        "name": "Objectivity",
-        "darkbg": false,
-        "venue": "Objectivity"
-      }
-    ],
-    "meetupId": 39,
-    "meetupTitle": "The CSS Meetup "
-  },
-  {
-    "meetupDate": "2022-10-29",
-    "sessionDetails": [
-      {
-        "speakerName": "Aditya Bholah",
-        "speakerGitHub": "reallyaditya",
-        "speakerJob": "",
-        "sessionTitle": "Data Visualization"
-      },
-      {
-        "speakerName": "Renghen",
-        "speakerGitHub": "renghen",
-        "speakerJob": "",
-        "sessionTitle": "Public speaking for developers"
-      },
-      {
-        "speakerName": "Kushul Soomaree",
-        "speakerGitHub": "kushul",
-        "speakerJob": "",
-        "sessionTitle": "Cool CSS tricks"
-      },
-      {
-        "speakerName": "Adarsh Hasnah",
-        "speakerGitHub": "adarshasnah",
-        "speakerJob": "",
-        "sessionTitle": "The evolution of web development"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/c0217e58-7e39-4478-8497-7c114253cdb7.png",
-        "name": "ELCA Mauritius",
-        "darkbg": false,
-        "venue": "ELCA Mauritius"
-      }
-    ],
-    "meetupId": 40,
-    "meetupTitle": "October Meetup"
-  },
-  {
-    "meetupDate": "2023-02-25",
-    "sessionDetails": [
-      {
-        "speakerName": " Mervyn Manilall",
-        "speakerGitHub": "mervynmanilall",
-        "speakerJob": "",
-        "sessionTitle": "Promises v/s Observables"
-      },
-      {
-        "speakerName": "Abdallah Yashir Ramsing",
-        "speakerGitHub": "abdallahYashir",
-        "speakerJob": "",
-        "sessionTitle": "Visual UI Regression Testing with BackstopJS"
-      },
-      {
-        "speakerName": "Sandeep Ramgolam",
-        "speakerGitHub": "MrSunshyne",
-        "speakerJob": "",
-        "sessionTitle": "Frontend news and udpates"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/47a95755-86a9-47c4-88c2-89c8991108f6.png",
-        "name": "MCB Digital Factory",
-        "darkbg": false,
-        "venue": "MCB Digital Factory"
-      }
-    ],
-    "meetupId": 41,
-    "meetupTitle": "Promises, Testing and frontend updates"
-  },
-  {
-    "meetupDate": "2023-03-25",
-    "sessionDetails": [
-      {
-        "speakerName": "Hoolan Naipal",
-        "speakerGitHub": "Hoolan01",
-        "speakerJob": "",
-        "sessionTitle": "Maintainable and scalable CSS using BEM"
-      },
-      {
-        "speakerName": "Kenny Oozageer",
-        "speakerGitHub": null,
-        "speakerJob": "",
-        "sessionTitle": "Maintainable and scalable CSS using BEM"
-      },
-      {
-        "speakerName": "Sandy Ramiah",
-        "speakerGitHub": "sandyr26",
-        "speakerJob": "",
-        "sessionTitle": "Powerful Routing & Optimizing Images with NextJS"
-      },
-      {
-        "speakerName": "Sandeep Ramgolam",
-        "speakerGitHub": "MrSunshyne",
-        "speakerJob": "",
-        "sessionTitle": "WebContainers - NodeJS in your browser"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/41996942-cd3c-42f0-ac41-33d9e9c39d35.png",
-        "name": "Providus",
-        "darkbg": true,
-        "venue": "Providus"
-      }
-    ],
-    "meetupId": 42,
-    "meetupTitle": "NextJS / WebContainers / CSS"
-  },
-  {
-    "meetupDate": "2023-04-29",
-    "sessionDetails": [
-      {
-        "speakerName": "Luisa Bruno",
-        "speakerGitHub": "luvibruno",
-        "speakerJob": "",
-        "sessionTitle": "Behind the scenes: Insights into the IT Recruitment Process"
-      },
-      {
-        "speakerName": "Michaël Jules",
-        "speakerGitHub": "mgjules",
-        "speakerJob": "",
-        "sessionTitle": "Stand out from the crowd - Tips to improve your CV"
-      },
-      {
-        "speakerName": "Cedric Poilly",
-        "speakerGitHub": "cedpoilly",
-        "speakerJob": "",
-        "sessionTitle": "Freelancing : do's and don'ts"
-      },
-      {
-        "speakerName": "Nayar Joolfoo",
-        "speakerGitHub": "Nayar",
-        "speakerJob": "",
-        "sessionTitle": "Entrepreneurship Tips"
-      },
-      {
-        "speakerName": "Asma Dinat",
-        "speakerGitHub": null,
-        "speakerJob": "",
-        "sessionTitle": "Video interviewing"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/d39d2791-76ba-4071-8a37-41018a25e14d.png",
-        "name": "Developers Institute Mauritius",
-        "darkbg": false,
-        "venue": "Developers Institute Mauritius"
-      }
-    ],
-    "meetupId": 43,
-    "meetupTitle": "Interviews / CVs / Freelancing"
-  },
-  {
-    "meetupDate": "2023-05-20",
-    "sessionDetails": [
-      {
-        "speakerName": "Saamiyah Peerun",
-        "speakerGitHub": "saamiyah",
-        "speakerJob": "",
-        "sessionTitle": "Git Going: Starting your Version Control Journey with Git"
-      },
-      {
-        "speakerName": "Michaël Jules",
-        "speakerGitHub": "mgjules",
-        "speakerJob": "",
-        "sessionTitle": "Stand out from the crowd - Tips to improve your CV"
-      },
-      {
-        "speakerName": "Ish Sookun",
-        "speakerGitHub": "ishwon",
-        "speakerJob": "",
-        "sessionTitle": "Career Path in the IT industry"
-      },
-      {
-        "speakerName": "Sandeep Ramgolam",
-        "speakerGitHub": "MrSunshyne",
-        "speakerJob": "",
-        "sessionTitle": "How to get started with Frontend Dev"
-      }
-    ],
+    "meetupDate": "2020-03-21",
+    "sessionDetails": [],
     "sponsorsDetails": [
       {
         "logo": "https://directus.frontend.mu/assets/b09873d2-7b5d-4d4f-b5e1-f0656fae0acb.png",
         "name": "Middlesex University Mauritius",
         "darkbg": true,
         "venue": "Middlesex University Mauritius"
-      },
-      {
-        "logo": "https://directus.frontend.mu/assets/79e36777-2b76-4e56-b6fd-4f677fdc06fe.png",
-        "name": "Bolt Talent Solutions",
-        "darkbg": false,
-        "venue": "Middlesex University Mauritius"
-      },
-      {
-        "logo": "https://directus.frontend.mu/assets/05cb1fd6-02a4-4c9c-92da-19515c308a15.jpg",
-        "name": "Red and Yellow",
-        "darkbg": false,
-        "venue": "Middlesex University Mauritius"
       }
     ],
-    "meetupId": 44,
-    "meetupTitle": "Git, CVs & getting in to tech"
+    "meetupId": 30,
+    "meetupTitle": "Front-End Coders Monthly #2 - 21 Mar 2020"
   },
   {
-    "meetupDate": "2023-06-24",
+    "meetupDate": "2020-02-15",
     "sessionDetails": [
       {
-        "speakerName": "Francis Kikulwe",
-        "speakerGitHub": "franc15",
+        "speakerName": "Sandeep Ramgolam",
+        "speakerGitHub": "MrSunshyne",
         "speakerJob": "",
-        "sessionTitle": "React state management with bear minimum🐻"
+        "sessionTitle": "Contributing to the Devcon(2020) website"
       },
       {
-        "speakerName": "Houzair Koussa",
-        "speakerGitHub": "houzyk",
+        "speakerName": "Cedric Poilly",
+        "speakerGitHub": "cedpoilly",
         "speakerJob": "",
-        "sessionTitle": "An overview of Functional Programming"
-      },
-      {
-        "speakerName": "Arvind Tacouri",
-        "speakerGitHub": "luvnish",
-        "speakerJob": "",
-        "sessionTitle": "Life of JS in Marketing"
-      },
-      {
-        "speakerName": "Jordan Bienvenue",
-        "speakerGitHub": "JordanBienvenue",
-        "speakerJob": "",
-        "sessionTitle": "NextJS & Shadcn"
-      },
-      {
-        "speakerName": "Bernard Joseph Jean Bruno",
-        "speakerGitHub": "eznix86",
-        "speakerJob": "",
-        "sessionTitle": "NextJS, TRpc & Prisma"
+        "sessionTitle": "Callbacks & Promises for asynchronous JavaScript"
       }
     ],
     "sponsorsDetails": [
       {
-        "logo": "https://directus.frontend.mu/assets/3e28ae40-2321-419b-988f-40d64f773479.png",
-        "name": "Alludo",
+        "logo": "https://directus.frontend.mu/assets/859b2e6e-20ab-4baa-91e2-1927946cafcc.png",
+        "name": "Bocasay",
         "darkbg": false,
-        "venue": "Alludo"
+        "venue": "Bocasay (Maurice)"
       }
     ],
-    "meetupId": 45,
-    "meetupTitle": "React, Zustand, FP & Marketing"
+    "meetupId": 29,
+    "meetupTitle": "Open Source / Promises / DevCon"
   },
   {
-    "meetupDate": "2023-08-26",
+    "meetupDate": "2020-02-01",
+    "sessionDetails": [],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/c3cc8699-0999-4fba-a2fd-454f0fc73c4d.png",
+        "name": "Bocasay",
+        "darkbg": false,
+        "venue": "Bocasay (Maurice)"
+      }
+    ],
+    "meetupId": 28,
+    "meetupTitle": "Front-End Coders Monthly - Jan 2020"
+  },
+  {
+    "meetupDate": "2019-09-21",
     "sessionDetails": [
       {
-        "speakerName": "Houzair Koussa",
-        "speakerGitHub": "houzyk",
+        "speakerName": "Pritvi Jheengut",
+        "speakerGitHub": "Jheengut",
         "speakerJob": "",
-        "sessionTitle": "Philosophy and Code"
+        "sessionTitle": "Presentation & preparations for Hacktoberfest"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/2e954ecf-2001-4752-a8e5-2d2735d1a4d4.png",
+        "name": "Extension Interactive",
+        "darkbg": false,
+        "venue": "Extension Interactive"
+      }
+    ],
+    "meetupId": 27,
+    "meetupTitle": "Hacktoberfest x DevFest"
+  },
+  {
+    "meetupDate": "2019-07-20",
+    "sessionDetails": [
+      {
+        "speakerName": "Humeira Diljore",
+        "speakerGitHub": "Humeira",
+        "speakerJob": "",
+        "sessionTitle": "Set up a blog with Netlify in less than 10 minutes."
       },
+      {
+        "speakerName": "Michaël Jules",
+        "speakerGitHub": "mgjules",
+        "speakerJob": "",
+        "sessionTitle": "What the Svelte!?"
+      },
+      {
+        "speakerName": "Bilkiss Dulloo",
+        "speakerGitHub": "Bilkiss",
+        "speakerJob": "",
+        "sessionTitle": "Angular tips - solving some common problems"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/66bfbca9-ede7-467b-8919-714bbf6b19a2.png",
+        "name": "TECHSPHERE LABS",
+        "darkbg": false,
+        "venue": "Techsphere Labs"
+      }
+    ],
+    "meetupId": 26,
+    "meetupTitle": "Netlify / Svelte / Angular"
+  },
+  {
+    "meetupDate": "2019-06-22",
+    "sessionDetails": [
+      {
+        "speakerName": "Kushul Soomaree",
+        "speakerGitHub": "kushul",
+        "speakerJob": "",
+        "sessionTitle": "CSS Name Spaces"
+      },
+      {
+        "speakerName": "Cedric Poilly",
+        "speakerGitHub": "cedpoilly",
+        "speakerJob": "",
+        "sessionTitle": "Web Components"
+      },
+      {
+        "speakerName": "Christophe Ramsamy",
+        "speakerGitHub": "kyushiro",
+        "speakerJob": "",
+        "sessionTitle": "Functional JavaScript"
+      },
+      {
+        "speakerName": "Sandeep Ramgolam",
+        "speakerGitHub": "MrSunshyne",
+        "speakerJob": "",
+        "sessionTitle": "Tech Topic Discussions"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/802e6645-54fd-421b-8774-ea79a71a548b.png",
+        "name": "Techsphere labs",
+        "darkbg": false,
+        "venue": "Techsphere Labs"
+      }
+    ],
+    "meetupId": 25,
+    "meetupTitle": "CSS / Web Components / FunctionalJS"
+  },
+  {
+    "meetupDate": "2019-02-23",
+    "sessionDetails": [
+      {
+        "speakerName": "Christophe Ramsamy",
+        "speakerGitHub": "kyushiro",
+        "speakerJob": "",
+        "sessionTitle": "Introduction to Heroku, or how to send your pet projects to the cloud"
+      },
+      {
+        "speakerName": "Bilkiss Dulloo",
+        "speakerGitHub": "Bilkiss",
+        "speakerJob": "",
+        "sessionTitle": "Translating an angular application into a mobile app with ionic"
+      },
+      {
+        "speakerName": "Rahul Thakoor",
+        "speakerGitHub": "rahul-thakoor",
+        "speakerJob": "",
+        "sessionTitle": "Hardware programming for javascript developers?"
+      }
+    ],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/479dab83-3d03-4f43-ab4d-532267e15656.png",
+        "name": "MakerSpace",
+        "darkbg": false,
+        "venue": "Makerspace"
+      }
+    ],
+    "meetupId": 24,
+    "meetupTitle": "Front-End Coders x MSCC"
+  },
+  {
+    "meetupDate": "2018-09-22",
+    "sessionDetails": [
       {
         "speakerName": "Saamiyah Peerun",
         "speakerGitHub": "saamiyah",
         "speakerJob": "",
-        "sessionTitle": "Go from attendee to speaker!"
-      },
-      {
-        "speakerName": "Cedric Poilly",
-        "speakerGitHub": "cedpoilly",
-        "speakerJob": "",
-        "sessionTitle": "Let's play"
-      },
-      {
-        "speakerName": "Jeshta Bhoyedhur",
-        "speakerGitHub": "jjeshta",
-        "speakerJob": "",
-        "sessionTitle": "Basic Security Practices for Web Application Development"
-      },
-      {
-        "speakerName": "Alberto De Santis",
-        "speakerGitHub": "hallede",
-        "speakerJob": "",
-        "sessionTitle": "First steps in your journey from Junior to Senior"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/d7175af9-371c-457b-b7fc-a48b93f27539.png",
-        "name": "UDM",
-        "darkbg": false,
-        "venue": "Universite des Mascareignes"
-      },
-      {
-        "logo": "https://directus.frontend.mu/assets/1c003401-f0e0-44cd-b187-167e78caf9dc.png",
-        "name": "Ceridian",
-        "darkbg": false,
-        "venue": "Universite des Mascareignes"
-      }
-    ],
-    "meetupId": 47,
-    "meetupTitle": "August Meetup"
-  },
-  {
-    "meetupDate": "2023-09-23",
-    "sessionDetails": [
-      {
-        "speakerName": "Nicolas Strands",
-        "speakerGitHub": "nicolasstrands",
-        "speakerJob": "",
-        "sessionTitle": "Intro to Supabase"
-      },
-      {
-        "speakerName": "Jain Ramchurn",
-        "speakerGitHub": "k3ii",
-        "speakerJob": "",
-        "sessionTitle": "Best Practices for Containerizing a NodeJS Application"
-      },
-      {
-        "speakerName": "Sandeep Ramgolam",
-        "speakerGitHub": "MrSunshyne",
-        "speakerJob": "",
-        "sessionTitle": "Ways to increase developer happiness"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/42bc2d01-b819-47ba-8c54-2e478c01ebb7.png",
-        "name": "Zendō",
-        "darkbg": false,
-        "venue": "Zendō"
-      },
-      {
-        "logo": "https://directus.frontend.mu/assets/128ebc03-9ad9-4a15-9a15-903b5987b216.png",
-        "name": "HIK Vision",
-        "darkbg": false,
-        "venue": "Zendō"
-      }
-    ],
-    "meetupId": 48,
-    "meetupTitle": "September Meetup"
-  },
-  {
-    "meetupDate": "2023-11-18",
-    "sessionDetails": [
-      {
-        "speakerName": "Abdallah Yashir Ramsing",
-        "speakerGitHub": "abdallahYashir",
-        "speakerJob": "",
-        "sessionTitle": "Navigating Monorepos: Your Gentle Introduction to Efficient Web Development"
-      },
-      {
-        "speakerName": "Alexandre Bissessur",
-        "speakerGitHub": "xelab04",
-        "speakerJob": "",
-        "sessionTitle": "Understanding the basics of Kubernetes"
-      },
-      {
-        "speakerName": "Cedric Poilly",
-        "speakerGitHub": "cedpoilly",
-        "speakerJob": "",
-        "sessionTitle": "Trivia is more fun with a touch of AI"
-      },
-      {
-        "speakerName": "Ankshita Maunthrooa",
-        "speakerGitHub": "ankshita02",
-        "speakerJob": "",
-        "sessionTitle": " Golang for beginners "
-      }
-    ],
-    "sponsorsDetails": [],
-    "meetupId": 49,
-    "meetupTitle": "November Meetup"
-  },
-  {
-    "meetupDate": "2024-03-02",
-    "sessionDetails": [
-      {
-        "speakerName": "Michaël Jules",
-        "speakerGitHub": "mgjules",
-        "speakerJob": "",
-        "sessionTitle": "import 'htmx.org'"
-      },
-      {
-        "speakerName": "Mootien Kasarajen",
-        "speakerGitHub": "MKov-KM",
-        "speakerJob": "",
-        "sessionTitle": "Streamlit"
-      },
-      {
-        "speakerName": "Dereck Lam Hon Wah",
-        "speakerGitHub": "derecklhw",
-        "speakerJob": "",
-        "sessionTitle": "GIT LFS - Large File Storage Management in Version Control"
-      },
-      {
-        "speakerName": "Sandeep Ramgolam",
-        "speakerGitHub": "MrSunshyne",
-        "speakerJob": "",
-        "sessionTitle": "Frontend News & Updates"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/563a3e1d-db03-4b27-8712-efb035e99d4d.png",
-        "name": "SD Worx",
-        "darkbg": false,
-        "venue": "SD Worx"
-      }
-    ],
-    "meetupId": 50,
-    "meetupTitle": "February Meetup"
-  },
-  {
-    "meetupDate": "2024-03-28",
-    "sessionDetails": [
-      {
-        "speakerName": "Raphaël Damevin",
-        "speakerGitHub": "damevin",
-        "speakerJob": "",
-        "sessionTitle": "Auth for your Nuxt application with Supabase"
-      },
-      {
-        "speakerName": "Cedric Poilly",
-        "speakerGitHub": "cedpoilly",
-        "speakerJob": "",
-        "sessionTitle": "Web sockets in Nitro"
-      },
-      {
-        "speakerName": "Sandeep Ramgolam",
-        "speakerGitHub": "MrSunshyne",
-        "speakerJob": "",
-        "sessionTitle": "Data fetching strategies"
-      }
-    ],
-    "sponsorsDetails": [],
-    "meetupId": 51,
-    "meetupTitle": "March Meetup Live on Twitch"
-  },
-  {
-    "meetupDate": "2024-04-27",
-    "sessionDetails": [
-      {
-        "speakerName": "Anand Ramrooch",
-        "speakerGitHub": "AnandR362",
-        "speakerJob": "",
-        "sessionTitle": "A journey with microprocessors"
-      },
-      {
-        "speakerName": "Jordan Bienvenue",
-        "speakerGitHub": "JordanBienvenue",
-        "speakerJob": "",
-        "sessionTitle": "Code and Honey"
-      },
-      {
-        "speakerName": "Sandeep Ramgolam",
-        "speakerGitHub": "MrSunshyne",
-        "speakerJob": "",
-        "sessionTitle": "Frontend News & Updates"
-      },
-      {
-        "speakerName": "Bernard Joseph Jean Bruno",
-        "speakerGitHub": "eznix86",
-        "speakerJob": "",
-        "sessionTitle": "Hacking with Zed, The New Code Editor"
-      },
-      {
-        "speakerName": "Ruben Pillay Vurdapen",
-        "speakerGitHub": "Rubenvur",
-        "speakerJob": "",
-        "sessionTitle": "Concept AI tool to help manual testing"
-      },
-      {
-        "speakerName": "Farhanaaz Curumthaullee",
-        "speakerGitHub": "Farhanaaz2805",
-        "speakerJob": "",
-        "sessionTitle": "Concept AI tool to help manual testing"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/cd1037b1-27a7-473c-b8ce-dea9419f979f.jpeg",
-        "name": "Publicis Global Delivery",
-        "darkbg": false,
-        "venue": "Publicis Global Delivery"
-      }
-    ],
-    "meetupId": 52,
-    "meetupTitle": "April Meetup"
-  },
-  {
-    "meetupDate": "2025-04-19",
-    "sessionDetails": [],
-    "sponsorsDetails": [],
-    "meetupId": 53,
-    "meetupTitle": "The Web Conference 2025"
-  },
-  {
-    "meetupDate": "2024-05-18",
-    "sessionDetails": [
-      {
-        "speakerName": "Michaël Jules",
-        "speakerGitHub": "mgjules",
-        "speakerJob": "",
-        "sessionTitle": "Personalized Development Environment (PDE)"
-      },
-      {
-        "speakerName": "Khali Lame",
-        "speakerGitHub": "khalibloo",
-        "speakerJob": "",
-        "sessionTitle": "Building your website for everyone"
-      },
-      {
-        "speakerName": "Gaël Latouche ",
-        "speakerGitHub": "Ga-L",
-        "speakerJob": "",
-        "sessionTitle": "Building in public - Electoral Data Visualization in Streamlit  "
-      },
-      {
-        "speakerName": "Chervine Bhiwoo",
-        "speakerGitHub": "chervineb",
-        "speakerJob": "",
-        "sessionTitle": "Enhancing Frontend Security for Secure Development"
-      },
-      {
-        "speakerName": "Sandeep Ramgolam",
-        "speakerGitHub": "MrSunshyne",
-        "speakerJob": "",
-        "sessionTitle": "Scroll Driven Animations"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/a7f8bf45-aa2c-4d5f-ba98-8b1a7a6cc191.png",
-        "name": "Dayforce",
-        "darkbg": false,
-        "venue": "Dayforce Mauritius"
-      }
-    ],
-    "meetupId": 54,
-    "meetupTitle": "May Meetup"
-  },
-  {
-    "meetupDate": "2024-06-22",
-    "sessionDetails": [
-      {
-        "speakerName": "Ophelia Boamah Ampoh",
-        "speakerGitHub": "ophyboamah",
-        "speakerJob": "",
-        "sessionTitle": "Revolutionizing Web Layouts with CSS Container Queries"
-      },
-      {
-        "speakerName": "Yogin Kumar Suttroogun",
-        "speakerGitHub": "yogin-suttroogun",
-        "speakerJob": "",
-        "sessionTitle": "101 into the IOS World"
-      },
-      {
-        "speakerName": "Adarsh Hasnah",
-        "speakerGitHub": "adarshasnah",
-        "speakerJob": "",
-        "sessionTitle": "State Management in React using Jotai"
-      },
-      {
-        "speakerName": "Sandeep Ramgolam",
-        "speakerGitHub": "MrSunshyne",
-        "speakerJob": "",
-        "sessionTitle": "Open Discussions"
-      },
-      {
-        "speakerName": "Cedric Poilly",
-        "speakerGitHub": "cedpoilly",
-        "speakerJob": "",
-        "sessionTitle": "Open Discussions"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/c0217e58-7e39-4478-8497-7c114253cdb7.png",
-        "name": "ELCA Mauritius",
-        "darkbg": false,
-        "venue": "ELCA"
-      }
-    ],
-    "meetupId": 55,
-    "meetupTitle": "The June Meetup"
-  },
-  {
-    "meetupDate": "2024-07-19",
-    "sessionDetails": [
-      {
-        "speakerName": "Sandeep Ramgolam",
-        "speakerGitHub": "MrSunshyne",
-        "speakerJob": "",
-        "sessionTitle": "Nuxt 3 Workshop : Let's build an app to monitor power outages!"
-      },
-      {
-        "speakerName": "Cedric Poilly",
-        "speakerGitHub": "cedpoilly",
-        "speakerJob": "",
-        "sessionTitle": "Nuxt 3 Workshop : Let's build an app to monitor power outages!"
-      },
-      {
-        "speakerName": "Sandeep Ramgolam",
-        "speakerGitHub": "MrSunshyne",
-        "speakerJob": "",
-        "sessionTitle": "The Frontend Developer Career Path"
-      }
-    ],
-    "sponsorsDetails": [],
-    "meetupId": 56,
-    "meetupTitle": "Workshop by frontend.mu at DevCon2024"
-  },
-  {
-    "meetupDate": "2024-08-24",
-    "sessionDetails": [
-      {
-        "speakerName": "Anish",
-        "speakerGitHub": "n-d-r-d-g",
-        "speakerJob": "",
-        "sessionTitle": "Contributing to an Open Source Community"
-      },
-      {
-        "speakerName": "Kevin Appadoo",
-        "speakerGitHub": "kevin-appadoo",
-        "speakerJob": "",
-        "sessionTitle": "Expo vs React Native - Choosing Expo for Mobile development ​"
-      },
-      {
-        "speakerName": "Houzair Koussa",
-        "speakerGitHub": "houzyk",
-        "speakerJob": "",
-        "sessionTitle": "Union & Intersection Types In TypeScript: A Deep Dive"
-      },
-      {
-        "speakerName": "Rayyan",
-        "speakerGitHub": "321zer0",
-        "speakerJob": "",
-        "sessionTitle": "Client-Server Data Exchange Mechanisms"
-      }
-    ],
-    "sponsorsDetails": [
-      {
-        "logo": "https://directus.frontend.mu/assets/6facfc10-cd82-42c4-9892-02bdbd967fd8.png",
-        "name": "Novity",
-        "darkbg": false,
-        "venue": "Novity Mauritius"
-      }
-    ],
-    "meetupId": 57,
-    "meetupTitle": "The August Meetup"
-  },
-  {
-    "meetupDate": "2024-09-28",
-    "sessionDetails": [
-      {
-        "speakerName": "Jain Ramchurn",
-        "speakerGitHub": "k3ii",
-        "speakerJob": "",
-        "sessionTitle": "Building CLI and TUI tools in Rust"
-      },
-      {
-        "speakerName": "Mahima Ramgolam",
-        "speakerGitHub": "mahima98",
-        "speakerJob": "",
-        "sessionTitle": "Exploring Nuxt Studio"
+        "sessionTitle": "TypeScript or, learning to trust the compiler"
       },
       {
         "speakerName": "Pritvi Jheengut",
         "speakerGitHub": "Jheengut",
         "speakerJob": "",
-        "sessionTitle": "Data protection laws in Mauritius"
-      },
-      {
-        "speakerName": "Sandeep Ramgolam",
-        "speakerGitHub": "MrSunshyne",
-        "speakerJob": "",
-        "sessionTitle": "The importance of side projects"
+        "sessionTitle": "How KDE is perfect for you"
       }
     ],
     "sponsorsDetails": [
       {
-        "logo": "https://directus.frontend.mu/assets/29dedcfe-5f63-4c33-a0c5-160fc9d78d6e.png",
-        "name": "Swan",
+        "logo": "https://directus.frontend.mu/assets/9615c3b8-e20e-4d96-ab42-8c0434eefc6a.png",
+        "name": "Extension Interactive",
         "darkbg": false,
-        "venue": "Swan Head Office"
+        "venue": "Extension Interactive"
       }
     ],
-    "meetupId": 58,
-    "meetupTitle": "The September Meetup"
+    "meetupId": 23,
+    "meetupTitle": "TypeScript: A gentle introduction"
   },
   {
-    "meetupDate": "2024-10-26",
+    "meetupDate": "2018-02-03",
     "sessionDetails": [
       {
-        "speakerName": "Joshua Iwugod",
-        "speakerGitHub": "iwugod",
-        "speakerJob": "",
-        "sessionTitle": "Create static html with partials, Old school way made easier"
-      },
-      {
         "speakerName": "Sandeep Ramgolam",
         "speakerGitHub": "MrSunshyne",
         "speakerJob": "",
-        "sessionTitle": "Frontend News & Updates"
+        "sessionTitle": "A keylogger using CSS only"
       },
       {
-        "speakerName": " Mervyn Manilall",
-        "speakerGitHub": "mervynmanilall",
+        "speakerName": "Cedric Poilly",
+        "speakerGitHub": "cedpoilly",
         "speakerJob": "",
-        "sessionTitle": "Feature flagging using Azure App Configuration"
+        "sessionTitle": "Going Freelance"
       },
       {
-        "speakerName": "Jain Ramchurn",
-        "speakerGitHub": "k3ii",
+        "speakerName": "Kushul Soomaree",
+        "speakerGitHub": "kushul",
         "speakerJob": "",
-        "sessionTitle": "Skyrocket your git workflow"
-      },
-      {
-        "speakerName": "Dereck Lam Hon Wah",
-        "speakerGitHub": "derecklhw",
-        "speakerJob": "",
-        "sessionTitle": "Skyrocket your git workflow"
+        "sessionTitle": "Discover CSS Grid"
       }
     ],
     "sponsorsDetails": [
       {
-        "logo": "https://directus.frontend.mu/assets/47a95755-86a9-47c4-88c2-89c8991108f6.png",
-        "name": "MCB Digital Factory",
+        "logo": "https://directus.frontend.mu/assets/0232448a-db1c-4092-b72f-74f772be21ce.jpg",
+        "name": "LSL Digital",
         "darkbg": false,
-        "venue": "Digital Factory"
+        "venue": "LSL Digital"
       }
     ],
-    "meetupId": 59,
-    "meetupTitle": "The October Meetup"
+    "meetupId": 22,
+    "meetupTitle": "Freelancing / CSS Grid"
   },
   {
-    "meetupDate": "2024-11-23",
+    "meetupDate": "2018-01-20",
     "sessionDetails": [],
+    "sponsorsDetails": [
+      {
+        "logo": "https://directus.frontend.mu/assets/bea584e0-3795-413c-977c-cc91db3c9a54.jpg",
+        "name": "LSL Digital",
+        "darkbg": false,
+        "venue": "LSL Digital"
+      }
+    ],
+    "meetupId": 21,
+    "meetupTitle": "Front-End Coders Meetup"
+  },
+  {
+    "meetupDate": "2016-07-30",
+    "sessionDetails": [
+      {
+        "speakerName": "Umar Waliyullah",
+        "speakerGitHub": "umarmw",
+        "speakerJob": "",
+        "sessionTitle": "A reasonable coding approach to CSS and Sass"
+      },
+      {
+        "speakerName": "Humeira Diljore",
+        "speakerGitHub": "Humeira",
+        "speakerJob": "",
+        "sessionTitle": "Vue.js Jumpstart"
+      },
+      {
+        "speakerName": "David Dias",
+        "speakerGitHub": "thedaviddias",
+        "speakerJob": "",
+        "sessionTitle": "Le futur, c'est maintenant avec CSS4"
+      },
+      {
+        "speakerName": "David Dias",
+        "speakerGitHub": "thedaviddias",
+        "speakerJob": "",
+        "sessionTitle": "Front-End developers Mauritius presentation"
+      }
+    ],
     "sponsorsDetails": [],
-    "meetupId": 60,
-    "meetupTitle": "The November Meetup"
+    "meetupId": 20,
+    "meetupTitle": "#1 Front-End Mauritius Meetup September 2016"
   }
 ]

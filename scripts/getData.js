@@ -53,8 +53,10 @@ https
 		response.on('end', () => {
 			// Parse the JSON data
 			const meetups = JSON.parse(data);
-			const formattedMeetups =  meetups.map((meetup) => getSpecificMeetupDetail(meetup));
-			
+			const formattedMeetups = meetups
+				.map((meetup) => getSpecificMeetupDetail(meetup))
+				.sort((a, b) => new Date(b.meetupDate) - new Date(a.meetupDate));
+
 			// Write the details to a JSON file
 			const outputFileName = `all-meetups.json`;
 

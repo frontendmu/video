@@ -1,24 +1,19 @@
-import {AbsoluteFill} from 'remotion';
-import {LogoFull} from './LogoFull';
-import {z} from 'zod';
-import {zColor} from '@remotion/zod-types';
-import {Background} from './Background/Background';
-import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {Title} from './Title';
-import {Subtitle} from './Subtitle';
+import { zColor } from '@remotion/zod-types';
+import { interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { z } from 'zod';
+import { LogoFull } from '../LogoFull';
+import { Title } from '../Title';
 
 export const myCompSchema = z.object({
 	meetupDate: z.string(),
 	titleColor: zColor(),
-	secondaryTitleColor: zColor(),
 	logoColor: zColor(),
 	meetupTitle: z.string(),
 });
 
-export const Cover: React.FC<z.infer<typeof myCompSchema>> = ({
+export const DaylightCover: React.FC<z.infer<typeof myCompSchema>> = ({
 	meetupDate,
 	titleColor,
-	secondaryTitleColor,
 	logoColor,
 	meetupTitle,
 }) => {
@@ -61,28 +56,27 @@ export const Cover: React.FC<z.infer<typeof myCompSchema>> = ({
 	const titleSubText = new Date(meetupDate).toDateString();
 
 	return (
-		<AbsoluteFill className="bg-gray-100 items-center justify-center">
-			<Background />
-			<div
-				className="flex flex-col gap-4 items-center relative z-100"
-				style={{opacity: mainContainerOpacity}}
-			>
-				<LogoFull color={logoColor} wave={wave1} />
+		<div
+			className="flex flex-col gap-4 items-center relative z-100"
+			style={{opacity: mainContainerOpacity}}
+		>
+			{/* <LogoFull color={logoColor} wave={wave1} /> */}
+			<LogoFull color={logoColor} secondaryColor='#ffffff' wave={wave1} />
 
-				<Title
-					titleText={meetupTitle}
-					titleColor={titleColor}
-					titleTransform={`translateY(${wave1}px)`}
-					titleOtherClasses="leading-tight mb-12"
-				/>
+			<Title
+				titleText={meetupTitle}
+				titleColor={titleColor}
+				titleTransform={`translateY(${wave1}px)`}
+				titleOtherClasses="leading-tight mb-12"
+			/>
 
-				<Subtitle
-					titleText={titleSubText}
-					titleColor={secondaryTitleColor}
-					titleTransform={`translateY(${wave1}px)`}
-					titleUnderline="underline"
-				/>
-			</div>
-		</AbsoluteFill>
+			{/* <Subtitle
+				titleText={titleSubText}
+				titleColor={secondaryTitleColor}
+				titleTransform={`translateY(${wave1}px)`}
+				titleUnderline="underline"
+			/> */}
+			<p className="text-green-800 text-5xl font-bold underline" style={{transform: `translateY(${wave1}px)`}}>{titleSubText}</p>
+		</div>
 	);
 };
