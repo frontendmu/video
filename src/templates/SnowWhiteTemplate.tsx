@@ -4,26 +4,12 @@ import {DaylightCover} from '../components/Cover/DaylightCover';
 import {Rsvp} from '../components/Rsvp';
 import {Speaker} from '../components/Speaker';
 // import meetupDetails from '../latest_meetup_details.json';
-import {Sponsor, SponsorDetail} from '../components/Sponsor';
+import {Sponsor} from '../components/Sponsor';
 import {z} from 'zod';
 import { WaveBackground } from '../components/WaveBackground';
+import { SingleMeetup } from './DefaultTemplate';
 
-export const SessionDetails = z.object({
-	speakerName: z.string(),
-	speakerGitHub: z.string().optional().nullable(),
-	speakerJob: z.string(),
-	sessionTitle: z.string(),
-});
-
-export const SingleMeetup = z.object({
-	meetupDate: z.string(),
-	meetupId: z.number(),
-	meetupTitle: z.string(),
-	sessionDetails: z.array(SessionDetails),
-	sponsorsDetails: z.array(SponsorDetail),
-});
-
-export const MeetupDetails = z.object({
+export const SnowWhiteTemplateProps = z.object({
 	meetupDetails: SingleMeetup,
 });
 
@@ -36,7 +22,7 @@ function FrameWrapper({children}: PropsWithChildren) {
 	)
 }
 
-export const SnowWhiteTemplate: React.FC<z.infer<typeof MeetupDetails>> = ({
+export const SnowWhiteTemplate: React.FC<z.infer<typeof SnowWhiteTemplateProps>> = ({
 	meetupDetails,
 }) => {
 	const {fps} = useVideoConfig();

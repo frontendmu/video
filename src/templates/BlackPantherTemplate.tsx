@@ -6,24 +6,10 @@ import { Speaker } from '../components/Speaker';
 // import meetupDetails from '../latest_meetup_details.json';
 import { z } from 'zod';
 import { WaveBackground } from '../components/WaveBackground';
-import { Sponsor, SponsorDetail } from '../components/Sponsor';
+import { Sponsor } from '../components/Sponsor';
+import { SingleMeetup } from './DefaultTemplate';
 
-export const SessionDetails = z.object({
-	speakerName: z.string(),
-	speakerGitHub: z.string().optional().nullable(),
-	speakerJob: z.string(),
-	sessionTitle: z.string(),
-});
-
-export const SingleMeetup = z.object({
-	meetupDate: z.string(),
-	meetupId: z.number(),
-	meetupTitle: z.string(),
-	sessionDetails: z.array(SessionDetails),
-	sponsorsDetails: z.array(SponsorDetail),
-});
-
-export const MeetupDetails = z.object({
+export const BlackPantherTemplateProps = z.object({
 	meetupDetails: SingleMeetup,
 });
 
@@ -36,7 +22,7 @@ function FrameWrapper({children}: PropsWithChildren) {
 	)
 }
 
-export const BlackPantherTemplate: React.FC<z.infer<typeof MeetupDetails>> = ({
+export const BlackPantherTemplate: React.FC<z.infer<typeof BlackPantherTemplateProps>> = ({
 	meetupDetails,
 }) => {
 	const {fps} = useVideoConfig();
