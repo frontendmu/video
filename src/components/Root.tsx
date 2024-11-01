@@ -4,7 +4,7 @@ import { z } from 'zod';
 import allMeetups from '../../all-meetups.json';
 import { TEMPLATE_CONFIGS } from '../constants';
 import '../styles/style.css';
-import DefaultTemplate from '../templates/DefaultTemplate';
+import DynamicTemplate from './DynamicTemplate';
 import { Template } from '../types';
 
 
@@ -55,7 +55,7 @@ export const RemotionRoot: React.FC = () => {
 				<Composition
 					key={meetup.meetupId}
 					id={removeSpecialChars(meetup.meetupDate + '-' + meetup.meetupTitle)}
-					component={DefaultTemplate}
+					component={DynamicTemplate}
 					schema={z.object({
 						template: z.string()
 					})}

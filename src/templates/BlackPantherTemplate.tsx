@@ -7,7 +7,7 @@ import { Speaker } from '../components/Speaker';
 import { z } from 'zod';
 import { WaveBackground } from '../components/WaveBackground';
 import { Sponsor } from '../components/Sponsor';
-import { SingleMeetup } from './DefaultTemplate';
+import { SingleMeetup } from '../components/DynamicTemplate';
 
 export const BlackPantherTemplateProps = z.object({
 	meetupDetails: SingleMeetup,

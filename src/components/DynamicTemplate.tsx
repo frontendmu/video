@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { SponsorDetail } from "../components/Sponsor";
+import { SponsorDetail } from "./Sponsor";
 import { TEMPLATE_CONFIGS } from "../constants";
 import { Template } from "../types";
 
@@ -18,12 +18,12 @@ export const SingleMeetup = z.object({
 	sponsorsDetails: z.array(SponsorDetail),
 });
 
-export const DefaultTemplateProps = z.object({
+export const DynamicTemplateProps = z.object({
 	meetupDetails: SingleMeetup,
 	template: z.string()
 });
 
-export default function DefaultTemplate({meetupDetails, template}: z.infer<typeof DefaultTemplateProps>) {
+export default function DynamicTemplate({meetupDetails, template}: z.infer<typeof DynamicTemplateProps>) {
 	const VideoComponent = TEMPLATE_CONFIGS[template as Template]?.component
 
   return <VideoComponent meetupDetails={meetupDetails} />

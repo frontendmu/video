@@ -7,7 +7,7 @@ import {Speaker} from '../components/Speaker';
 import {Sponsor} from '../components/Sponsor';
 import {z} from 'zod';
 import { WaveBackground } from '../components/WaveBackground';
-import { SingleMeetup } from './DefaultTemplate';
+import { SingleMeetup } from '../components/DynamicTemplate';
 
 export const SnowWhiteTemplateProps = z.object({
 	meetupDetails: SingleMeetup,
