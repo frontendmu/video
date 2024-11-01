@@ -34,11 +34,17 @@ function TemplateSwitch({template, setTemplate}: {template: Template, setTemplat
 	return (
 		<header className='flex flex-row justify-end items-center gap-1 text-sm'>
 			<label htmlFor='template' className='text-zinc-300'>Template:</label>
-			<select id="template" className="rounded-md px-2 py-1" defaultValue={template} onChange={handleTemplateChange}>
-				<option value="blackPanther">Black Panther</option>
-				<option value="snowWhite">Snow White</option>
-				<option value="squareRoot">Square Root</option>
-				<option value="youtube">Youtube</option>
+			<select
+				id="template"
+				className="rounded-md px-2 py-1"
+				defaultValue={template}
+				onChange={handleTemplateChange}
+			>
+				{
+					Object.entries(TEMPLATE_CONFIGS).map(([key, config]) => (
+						<option key={key} value={key}>{config.label}</option>
+					))
+				}
 			</select>
 		</header>
 	)

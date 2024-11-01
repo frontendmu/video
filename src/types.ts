@@ -23,6 +23,7 @@ export type Meetup = z.infer<typeof meetupDetails>
 
 export type TemplateConfig = Record<string, {
   component: React.FC;
+  label: string;
   fps: number;
   width: number;
   height: number;
