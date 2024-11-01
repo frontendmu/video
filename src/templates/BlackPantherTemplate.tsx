@@ -3,15 +3,9 @@ import { AbsoluteFill, Audio, Sequence, staticFile, useVideoConfig } from 'remot
 import { MidnightCover } from '../components/Cover/MidnightCover';
 import { Rsvp } from '../components/Rsvp';
 import { Speaker } from '../components/Speaker';
-// import meetupDetails from '../latest_meetup_details.json';
-import { z } from 'zod';
 import { WaveBackground } from '../components/WaveBackground';
 import { Sponsor } from '../components/Sponsor';
-import { SingleMeetup } from '../components/DynamicTemplate';
-
-export const BlackPantherTemplateProps = z.object({
-	meetupDetails: SingleMeetup,
-});
+import { useTemplate } from '../context/TemplateProvider';
 
 function FrameWrapper({children}: PropsWithChildren) {
 	return (
@@ -22,10 +16,9 @@ function FrameWrapper({children}: PropsWithChildren) {
 	)
 }
 
-export const BlackPantherTemplate: React.FC<z.infer<typeof BlackPantherTemplateProps>> = ({
-	meetupDetails,
-}) => {
+export const BlackPantherTemplate: React.FC = () => {
 	const {fps} = useVideoConfig();
+	const {meetupDetails} = useTemplate();
 	const slideDuration = 6 * fps; // x seconds per slide
 
 	const titleColor = '#ffffff';

@@ -1,10 +1,10 @@
 import { ChangeEvent, Dispatch, SetStateAction, useState } from 'react';
 import { Composition } from 'remotion';
-import { z } from 'zod';
 import allMeetups from '../all-meetups.json';
-import { TEMPLATE_CONFIGS } from './constants';
-import './styles/style.css';
 import DynamicTemplate from './components/DynamicTemplate';
+import { TEMPLATE_CONFIGS } from './constants';
+import { TemplateProvider } from './context/TemplateProvider';
+import './styles/style.css';
 import { Template } from './types';
 
 
@@ -52,24 +52,16 @@ export const App: React.FC = () => {
 			<TemplateSwitch template={template as Template} setTemplate={setTemplate as Dispatch<SetStateAction<Template>>} />
 			
 			{allMeetups.map((meetupDetails) => (
-				<Composition
-					key={meetupDetails.meetupId}
-					id={removeSpecialChars(meetupDetails.meetupDate + '-' + meetupDetails.meetupTitle)}
-					component={DynamicTemplate}
-					schema={z.object({
-						template: z.string()
-					})}
-					defaultProps={
-						{
-							meetupDetails,
-							template,
-						} 
-					}
-					durationInFrames={180 * 8} // Adjust based on total number of slides
-					fps={TEMPLATE_CONFIGS[template as Template]?.fps ?? 30}
-					width={TEMPLATE_CONFIGS[template as Template]?.width ?? 720}
-					height={TEMPLATE_CONFIGS[template as Template]?.height ?? 1280}
-				/>
+				<TemplateProvider key={meetupDetails.meetupId} meetupDetails={meetupDetails} template={template}>
+					<Composition
+						id={removeSpecialChars(meetupDetails.meetupDate + '-' + meetupDetails.meetupTitle)}
+						component={DynamicTemplate}
+						durationInFrames={180 * 8} // Adjust based on total number of slides
+						fps={TEMPLATE_CONFIGS[template as Template]?.fps ?? 30}
+						width={TEMPLATE_CONFIGS[template as Template]?.width ?? 720}
+						height={TEMPLATE_CONFIGS[template as Template]?.height ?? 1280}
+					/>
+				</TemplateProvider>
 			))}
 		</>
 	);

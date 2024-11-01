@@ -3,15 +3,9 @@ import {Sequence, useVideoConfig, Audio, staticFile, AbsoluteFill} from 'remotio
 import {DaylightCover} from '../components/Cover/DaylightCover';
 import {Rsvp} from '../components/Rsvp';
 import {Speaker} from '../components/Speaker';
-// import meetupDetails from '../latest_meetup_details.json';
 import {Sponsor} from '../components/Sponsor';
-import {z} from 'zod';
 import { WaveBackground } from '../components/WaveBackground';
-import { SingleMeetup } from '../components/DynamicTemplate';
-
-export const SnowWhiteTemplateProps = z.object({
-	meetupDetails: SingleMeetup,
-});
+import { useTemplate } from '../context/TemplateProvider';
 
 function FrameWrapper({children}: PropsWithChildren) {
 	return (
@@ -22,10 +16,9 @@ function FrameWrapper({children}: PropsWithChildren) {
 	)
 }
 
-export const SnowWhiteTemplate: React.FC<z.infer<typeof SnowWhiteTemplateProps>> = ({
-	meetupDetails,
-}) => {
+export const SnowWhiteTemplate: React.FC = () => {
 	const {fps} = useVideoConfig();
+	const {meetupDetails} = useTemplate();
 	const slideDuration = 6 * fps; // x seconds per slide
 
 	const titleColor = '#000000';

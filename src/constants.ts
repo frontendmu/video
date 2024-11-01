@@ -1,7 +1,8 @@
 import { BlackPantherTemplate } from "./templates/BlackPantherTemplate";
 import { SnowWhiteTemplate } from "./templates/SnowWhiteTemplate";
+import { TemplateConfig } from "./types";
 
-export const TEMPLATE_CONFIGS = {
+export const TEMPLATE_CONFIGS: TemplateConfig = {
 	blackPanther: {
     component: BlackPantherTemplate,
     fps: 30,
