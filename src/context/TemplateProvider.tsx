@@ -27,7 +27,7 @@ export function TemplateProvider({ meetupDetails, template, children }: Template
 export function useTemplate() {
   const ctx = useContext(TemplateContext);
 
-  if (!ctx) throw new Error("useTemplate must be used within an TemplateProvider!");
+  if (!ctx) throw new Error("useTemplate must be used within a TemplateProvider!");
 
   return ctx!;
 }

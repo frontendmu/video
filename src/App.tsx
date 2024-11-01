@@ -62,7 +62,7 @@ export const App: React.FC = () => {
 					<Composition
 						id={removeSpecialChars(meetupDetails.meetupDate + '-' + meetupDetails.meetupTitle)}
 						component={DynamicTemplate}
-						durationInFrames={180 * 8} // Adjust based on total number of slides
+						durationInFrames={TEMPLATE_CONFIGS[template as Template]?.getDurationInFrames?.(meetupDetails, TEMPLATE_CONFIGS[template as Template]?.fps ?? 30)?.total}
 						fps={TEMPLATE_CONFIGS[template as Template]?.fps ?? 30}
 						width={TEMPLATE_CONFIGS[template as Template]?.width ?? 720}
 						height={TEMPLATE_CONFIGS[template as Template]?.height ?? 1280}

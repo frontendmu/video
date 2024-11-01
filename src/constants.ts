@@ -1,5 +1,5 @@
-import { BlackPantherTemplate } from "./templates/BlackPantherTemplate";
-import { SnowWhiteTemplate } from "./templates/SnowWhiteTemplate";
+import { BlackPantherTemplate, getDurationInFrames as getBlackPantherDurationInFrames } from "./templates/BlackPantherTemplate";
+import { SnowWhiteTemplate, getDurationInFrames as getSnowWhiteDurationInFrames } from "./templates/SnowWhiteTemplate";
 import { TemplateConfig } from "./types";
 
 export const TEMPLATE_CONFIGS: TemplateConfig = {
@@ -9,6 +9,7 @@ export const TEMPLATE_CONFIGS: TemplateConfig = {
     fps: 30,
     width: 720,
     height: 1280,
+    getDurationInFrames: getBlackPantherDurationInFrames,
   },
 	snowWhite: {
     component: SnowWhiteTemplate,
@@ -16,6 +17,7 @@ export const TEMPLATE_CONFIGS: TemplateConfig = {
     fps: 30,
     width: 720,
     height: 1280,
+    getDurationInFrames: getSnowWhiteDurationInFrames,
   },
 	squareRoot: {
     component: SnowWhiteTemplate,
@@ -23,6 +25,7 @@ export const TEMPLATE_CONFIGS: TemplateConfig = {
     fps: 30,
     width: 1080,
     height: 1080,
+    getDurationInFrames: getSnowWhiteDurationInFrames,
   },
 	youtube: {
     component: BlackPantherTemplate,
@@ -30,5 +33,6 @@ export const TEMPLATE_CONFIGS: TemplateConfig = {
     fps: 30,
     width: 1920,
     height: 1080,
+    getDurationInFrames: getBlackPantherDurationInFrames,
   },
 } as const

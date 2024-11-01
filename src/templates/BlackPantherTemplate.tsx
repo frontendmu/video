@@ -3,9 +3,10 @@ import { AbsoluteFill, Audio, Sequence, staticFile, useVideoConfig } from 'remot
 import { MidnightCover } from '../components/Cover/MidnightCover';
 import { Rsvp } from '../components/Rsvp';
 import { Speaker } from '../components/Speaker';
-import { WaveBackground } from '../components/WaveBackground';
 import { Sponsor } from '../components/Sponsor';
+import { WaveBackground } from '../components/WaveBackground';
 import { useTemplate } from '../context/TemplateProvider';
+import { Meetup } from '../types';
 
 function FrameWrapper({children}: PropsWithChildren) {
 	return (
@@ -16,11 +17,42 @@ function FrameWrapper({children}: PropsWithChildren) {
 	)
 }
 
+export const getDurationInFrames = (meetupDetails: Meetup, fps: number) => {
+	const coverDurationInSeconds = 3;
+	const coverDurationInFrames = coverDurationInSeconds * fps;
+
+	const individualSponsorDurationInSeconds = 6;
+	const totalSponsorsDurationInSeconds = individualSponsorDurationInSeconds * meetupDetails.sponsorsDetails.length;
+	const totalSponsorsDurationInFrames = totalSponsorsDurationInSeconds * fps;
+
+	const individualSpeakerDurationInSeconds = 6;
+	const totalSpeakersDurationInSeconds = individualSpeakerDurationInSeconds * meetupDetails.sessionDetails.length;
+	const totalSpeakersDurationInFrames = totalSpeakersDurationInSeconds * fps;
+
+	const rsvpDurationInSeconds = 6;
+	const rsvpDurationInFrames = rsvpDurationInSeconds * fps;
+
+	const totalDurationInFrames = coverDurationInFrames + totalSponsorsDurationInFrames + totalSpeakersDurationInFrames + rsvpDurationInFrames;
+
+	return {
+		cover: coverDurationInFrames,
+		sponsor: {
+			individual: individualSponsorDurationInSeconds * fps,
+			total: totalSponsorsDurationInFrames,
+		},
+		speaker: {
+			individual: individualSpeakerDurationInSeconds * fps,
+			total: totalSpeakersDurationInFrames,
+		},
+		rsvp: rsvpDurationInFrames,
+		total: totalDurationInFrames,
+	};
+}
+
 export const BlackPantherTemplate: React.FC = () => {
 	const {fps} = useVideoConfig();
 	const {meetupDetails} = useTemplate();
-	const slideDuration = 6 * fps; // x seconds per slide
-
+	const frames = getDurationInFrames(meetupDetails, fps);
 	const titleColor = '#ffffff';
 	const secondaryTitleColor = 'hsl(331, 90%, 56%)';
 	const logoColor = '#ffffff';
@@ -28,12 +60,11 @@ export const BlackPantherTemplate: React.FC = () => {
 	return (
 		<>
 			<Audio
-				startFrom={slideDuration}
-				endAt={slideDuration * (3 + (meetupDetails.sessionDetails.length + 1))}
 				src={staticFile('audio.mp3')}
+				startFrom={3 * fps} // the time in the raw audio file from which it will start playing
 			/>
 
-			<Sequence name="Cover" durationInFrames={slideDuration}>
+			<Sequence name="Cover" durationInFrames={frames.cover}>
 				<FrameWrapper>
 					<MidnightCover
 						meetupDate={meetupDetails.meetupDate}
@@ -44,12 +75,12 @@ export const BlackPantherTemplate: React.FC = () => {
 					/>
 				</FrameWrapper>
 			</Sequence>
-			{meetupDetails.sponsorsDetails.map((sponsor) => (
+			{meetupDetails.sponsorsDetails.map((sponsor, index) => (
 				<Sequence
 					key={sponsor.name}
 					name={`Sponsor - ${sponsor.name}`}
-					durationInFrames={slideDuration}
-					from={slideDuration}
+					from={frames.cover + (index * frames.sponsor.individual)}
+					durationInFrames={frames.sponsor.individual}
 				>
 					<FrameWrapper>
 						<Sponsor
@@ -64,10 +95,9 @@ export const BlackPantherTemplate: React.FC = () => {
 				<Sequence
 					key={`${session.sessionTitle}-${session.speakerName}`}
 					name={`Session - ${session.sessionTitle}`}
-					from={slideDuration + (index + 1) * slideDuration}
-					durationInFrames={slideDuration}
+					from={frames.cover + frames.sponsor.total + (index * frames.speaker.individual)}
+					durationInFrames={frames.speaker.individual}
 				>
-					{/* <div className='text-white'>{alert(session.sessionTitle)}</div> */}
 					<FrameWrapper>
 						<Speaker
 							sessionText={session.sessionTitle}
@@ -81,11 +111,8 @@ export const BlackPantherTemplate: React.FC = () => {
 			))}
 			<Sequence
 				name="RSVP"
-				durationInFrames={slideDuration}
-				from={
-					slideDuration * meetupDetails.sessionDetails.length +
-					slideDuration * 2
-				}
+				from={frames.cover + frames.sponsor.total + frames.speaker.total}
+				durationInFrames={frames.rsvp}
 			>
 				<FrameWrapper>
 					<Rsvp

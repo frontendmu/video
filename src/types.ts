@@ -27,6 +27,13 @@ export type TemplateConfig = Record<string, {
   fps: number;
   width: number;
   height: number;
+  getDurationInFrames: (meetupDetails: Meetup, fps: number) => {
+    [key: string]: number | {
+      individual: number;
+      total: number;
+    };
+    total: number;
+  }
 }>
 
 export type Template = keyof typeof TEMPLATE_CONFIGS
