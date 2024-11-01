@@ -1,11 +1,11 @@
 import { ChangeEvent, Dispatch, SetStateAction, useState } from 'react';
 import { Composition } from 'remotion';
 import { z } from 'zod';
-import allMeetups from '../../all-meetups.json';
-import { TEMPLATE_CONFIGS } from '../constants';
-import '../styles/style.css';
-import DynamicTemplate from './DynamicTemplate';
-import { Template } from '../types';
+import allMeetups from '../all-meetups.json';
+import { TEMPLATE_CONFIGS } from './constants';
+import './styles/style.css';
+import DynamicTemplate from './components/DynamicTemplate';
+import { Template } from './types';
 
 
 // a function that only allows a-z, A-Z, 0-9, CJK, but replace spaces with - and remove multiple - 
@@ -44,24 +44,24 @@ function TemplateSwitch({template, setTemplate}: {template: Template, setTemplat
 	)
 }
 
-export const RemotionRoot: React.FC = () => {
+export const App: React.FC = () => {
 	const [template, setTemplate] = useState(retrieveInitialTemplate())
 
 	return (
 		<>
 			<TemplateSwitch template={template as Template} setTemplate={setTemplate as Dispatch<SetStateAction<Template>>} />
 			
-			{allMeetups.map((meetup) => (
+			{allMeetups.map((meetupDetails) => (
 				<Composition
-					key={meetup.meetupId}
-					id={removeSpecialChars(meetup.meetupDate + '-' + meetup.meetupTitle)}
+					key={meetupDetails.meetupId}
+					id={removeSpecialChars(meetupDetails.meetupDate + '-' + meetupDetails.meetupTitle)}
 					component={DynamicTemplate}
 					schema={z.object({
 						template: z.string()
 					})}
 					defaultProps={
 						{
-							meetupDetails: meetup,
+							meetupDetails,
 							template,
 						} 
 					}

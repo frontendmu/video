@@ -1,4 +1,4 @@
 import {registerRoot} from 'remotion';
-import {RemotionRoot} from './components/Root';
+import {App} from './App';
 
-registerRoot(RemotionRoot);
+registerRoot(App);
