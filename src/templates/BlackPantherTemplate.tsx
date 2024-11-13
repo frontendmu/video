@@ -7,6 +7,7 @@ import { Sponsor } from '../components/Sponsor';
 import { WaveBackground } from '../components/WaveBackground';
 import { useTemplate } from '../context/TemplateProvider';
 import { Meetup } from '../types';
+import { SOUNDTRACK_CONFIGS } from '../utils/constants';
 
 function FrameWrapper({children}: PropsWithChildren) {
 	return (
@@ -51,7 +52,7 @@ export const getDurationInFrames = (meetupDetails: Meetup, fps: number) => {
 
 export const BlackPantherTemplate: React.FC = () => {
 	const {fps} = useVideoConfig();
-	const {meetupDetails} = useTemplate();
+	const {soundtrack, meetupDetails} = useTemplate();
 	const frames = getDurationInFrames(meetupDetails, fps);
 	const titleColor = '#ffffff';
 	const secondaryTitleColor = 'hsl(331, 90%, 56%)';
@@ -60,7 +61,8 @@ export const BlackPantherTemplate: React.FC = () => {
 	return (
 		<>
 			<Audio
-				src={staticFile('audio.mp3')}
+				loop
+				src={staticFile(SOUNDTRACK_CONFIGS[soundtrack].path)}
 				startFrom={3 * fps} // the time in the raw audio file from which it will start playing
 			/>
 

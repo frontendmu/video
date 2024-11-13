@@ -36,3 +36,14 @@ export const TEMPLATE_CONFIGS = {
     getDurationInFrames: getBlackPantherDurationInFrames,
   },
 } satisfies TemplateConfig
+
+export const SOUNDTRACK_CONFIGS = {
+  audio1: {
+    label: "Audio 1",
+    path: "soundtracks/audio1.mp3"
+  },
+  audio2: {
+    label: "Audio 2",
+    path: "soundtracks/audio2.mp3"
+  },
+}

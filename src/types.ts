@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { TEMPLATE_CONFIGS } from "./utils/constants";
+import { SOUNDTRACK_CONFIGS, TEMPLATE_CONFIGS } from "./utils/constants";
 import { SponsorDetail } from "./components/Sponsor";
 
 const sessionDetails = z.object({
@@ -37,3 +37,10 @@ export type TemplateConfig = Record<string, {
 }>
 
 export type Template = keyof typeof TEMPLATE_CONFIGS
+
+export type SoundtrackConfig = Record<string, {
+  label: string;
+  path: string;
+}>
+
+export type Soundtrack = keyof typeof SOUNDTRACK_CONFIGS
