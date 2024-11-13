@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 import { AbsoluteFill, Audio, Sequence, staticFile, useVideoConfig } from 'remotion';
-import { MidnightCover } from '../components/Cover/MidnightCover';
+import { MidnightCover } from '../components/cover/MidnightCover';
 import { Rsvp } from '../components/Rsvp';
 import { Speaker } from '../components/Speaker';
 import { Sponsor } from '../components/Sponsor';

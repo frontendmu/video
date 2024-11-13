@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 import {Sequence, useVideoConfig, Audio, staticFile, AbsoluteFill} from 'remotion';
-import {DaylightCover} from '../components/Cover/DaylightCover';
+import {DaylightCover} from '../components/cover/DaylightCover';
 import {Rsvp} from '../components/Rsvp';
 import {Speaker} from '../components/Speaker';
 import {Sponsor} from '../components/Sponsor';
