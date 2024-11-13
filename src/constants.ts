@@ -2,7 +2,7 @@ import { BlackPantherTemplate, getDurationInFrames as getBlackPantherDurationInF
 import { SnowWhiteTemplate, getDurationInFrames as getSnowWhiteDurationInFrames } from "./templates/SnowWhiteTemplate";
 import { TemplateConfig } from "./types";
 
-export const TEMPLATE_CONFIGS: TemplateConfig = {
+export const TEMPLATE_CONFIGS = {
 	blackPanther: {
     component: BlackPantherTemplate,
     label: 'Black Panther',
@@ -35,4 +35,4 @@ export const TEMPLATE_CONFIGS: TemplateConfig = {
     height: 1080,
     getDurationInFrames: getBlackPantherDurationInFrames,
   },
-} as const
+} satisfies TemplateConfig
