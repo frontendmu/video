@@ -1,16 +1,11 @@
 import { ChangeEvent, Dispatch, SetStateAction, useState } from 'react';
 import { Composition } from 'remotion';
 import allMeetups from '../all-meetups.json';
-import { TEMPLATE_CONFIGS } from './constants';
 import { TemplateProvider, useTemplate } from './context/TemplateProvider';
 import './styles/style.css';
 import { Template } from './types';
-
-
-// a function that only allows a-z, A-Z, 0-9, CJK, but replace spaces with - and remove multiple - 
-function removeSpecialChars(str:  string) {
-	return str.replace(/[^a-zA-Z0-9\u4E00-\u9FFF]/g, '-').replace(/-+/g, '-');
-}
+import { TEMPLATE_CONFIGS } from './utils/constants';
+import { removeSpecialChars } from './utils/functions';
 
 function retrieveInitialTemplate() {
 	const searchParams = new URLSearchParams(window.location.search)

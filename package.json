@@ -18,9 +18,11 @@
     "@remotion/bundler": "4.0.209",
     "@remotion/cli": "4.0.209",
     "@remotion/zod-types": "4.0.209",
+    "clsx": "^2.1.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "remotion": "4.0.209",
+    "tailwind-merge": "^2.5.4",
     "zod": "3.22.3"
   },
   "devDependencies": {

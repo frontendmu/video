@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { TEMPLATE_CONFIGS } from "./constants";
+import { TEMPLATE_CONFIGS } from "./utils/constants";
 import { SponsorDetail } from "./components/Sponsor";
 
 const sessionDetails = z.object({

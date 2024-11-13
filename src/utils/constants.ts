@@ -1,6 +1,6 @@
-import { BlackPantherTemplate, getDurationInFrames as getBlackPantherDurationInFrames } from "./templates/BlackPantherTemplate";
-import { SnowWhiteTemplate, getDurationInFrames as getSnowWhiteDurationInFrames } from "./templates/SnowWhiteTemplate";
-import { TemplateConfig } from "./types";
+import { BlackPantherTemplate, getDurationInFrames as getBlackPantherDurationInFrames } from "../templates/BlackPantherTemplate";
+import { SnowWhiteTemplate, getDurationInFrames as getSnowWhiteDurationInFrames } from "../templates/SnowWhiteTemplate";
+import { TemplateConfig } from "../types";
 
 export const TEMPLATE_CONFIGS = {
 	blackPanther: {
