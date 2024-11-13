@@ -1,9 +1,8 @@
 import { ChangeEvent, Dispatch, SetStateAction, useState } from 'react';
 import { Composition } from 'remotion';
 import allMeetups from '../all-meetups.json';
-import DynamicTemplate from './components/DynamicTemplate';
 import { TEMPLATE_CONFIGS } from './constants';
-import { TemplateProvider } from './context/TemplateProvider';
+import { TemplateProvider, useTemplate } from './context/TemplateProvider';
 import './styles/style.css';
 import { Template } from './types';
 
@@ -20,6 +19,13 @@ function retrieveInitialTemplate() {
 	if (template! in TEMPLATE_CONFIGS) return template as Template
 	
 	return Object.keys(TEMPLATE_CONFIGS)[0] as Template
+}
+
+function DynamicTemplate() {
+	const {template} = useTemplate();
+	const VideoComponent = TEMPLATE_CONFIGS[template]?.component
+
+  return <VideoComponent />
 }
 
 function TemplateSwitch({template, setTemplate}: {template: Template, setTemplate: Dispatch<SetStateAction<Template>>}) {
